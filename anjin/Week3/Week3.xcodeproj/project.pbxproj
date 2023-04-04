@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		516436E229DC5178002211AB /* VC2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516436E129DC5178002211AB /* VC2ViewController.swift */; };
 		51C2C69129D7C9A90050FDB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C2C69029D7C9A90050FDB8 /* AppDelegate.swift */; };
 		51C2C69329D7C9A90050FDB8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C2C69229D7C9A90050FDB8 /* SceneDelegate.swift */; };
 		51C2C69529D7C9A90050FDB8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C2C69429D7C9A90050FDB8 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		516436E129DC5178002211AB /* VC2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC2ViewController.swift; sourceTree = "<group>"; };
 		51C2C68D29D7C9A90050FDB8 /* Week3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Week3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51C2C69029D7C9A90050FDB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51C2C69229D7C9A90050FDB8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				51C2C69029D7C9A90050FDB8 /* AppDelegate.swift */,
 				51C2C69229D7C9A90050FDB8 /* SceneDelegate.swift */,
 				51C2C69429D7C9A90050FDB8 /* ViewController.swift */,
+				516436E129DC5178002211AB /* VC2ViewController.swift */,
 				51C2C69629D7C9A90050FDB8 /* Main.storyboard */,
 				51C2C69929D7C9AA0050FDB8 /* Assets.xcassets */,
 				51C2C69B29D7C9AA0050FDB8 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				516436E229DC5178002211AB /* VC2ViewController.swift in Sources */,
 				51C2C69529D7C9A90050FDB8 /* ViewController.swift in Sources */,
 				51C2C69129D7C9A90050FDB8 /* AppDelegate.swift in Sources */,
 				51C2C69329D7C9A90050FDB8 /* SceneDelegate.swift in Sources */,
