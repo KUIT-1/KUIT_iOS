@@ -15,8 +15,6 @@ class ViewController: UIViewController {
     }
 
     @IBAction func button1Tap(_ sender: Any) {
-        let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "VC2")
-        self.navigationController?.pushViewController(nextVC!, animated: true)
     }
     
     @IBAction func button2Tap(_ sender: Any) {
