@@ -11,23 +11,11 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Week3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VC1" id="BYZ-38-t0r" customClass="ViewController" customModule="Week3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MvZ-hD-xSQ">
-                                <rect key="frame" x="159" y="421" width="75" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="TqB-ze-guO"/>
-                                    <constraint firstAttribute="width" constant="75" id="y99-SA-b04"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                <connections>
-                                    <segue destination="kJ7-QE-fHH" kind="show" id="d9u-2a-YJg"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BN1-sW-Nos">
                                 <rect key="frame" x="154" y="464" width="85" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -35,15 +23,17 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Button2"/>
                                 <connections>
                                     <action selector="Button2Tap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lmv-eT-gZe"/>
+                                    <action selector="button2Tap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WJ5-id-tOy"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="정적인 버튼" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMZ-qT-VNz">
-                                <rect key="frame" x="157" y="402" width="78" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MvZ-hD-xSQ">
+                                <rect key="frame" x="130" y="421" width="132" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Full Screen"/>
+                                <connections>
+                                    <action selector="button1Tap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IVt-Xe-baZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -52,9 +42,6 @@
                             <constraint firstItem="MvZ-hD-xSQ" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="sl0-5u-KmM"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <segue destination="kJ7-QE-fHH" kind="show" identifier="Segue1" id="Hlw-dV-z3s"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -63,13 +50,13 @@
         <!--View Controller-->
         <scene sceneID="dF7-jn-Oup">
             <objects>
-                <viewController id="kJ7-QE-fHH" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VC2" id="kJ7-QE-fHH" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qac-nV-arm">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="두 번째 화면" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wTs-Sr-nmt">
-                                <rect key="frame" x="155" y="410.66666666666669" width="83" height="21"/>
+                                <rect key="frame" x="155" y="428" width="83" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="P5z-Fb-fK6"/>
                                     <constraint firstAttribute="width" constant="83" id="lZx-lM-vsd"/>
@@ -93,9 +80,6 @@
             <point key="canvasLocation" x="676" y="-13"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="d9u-2a-YJg"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
