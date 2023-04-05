@@ -26,7 +26,9 @@ class foodButton: UIView {
     
     
     func customInit() {
-        guard let view = loadViewFromNib() else { return }
+        guard let view = loadViewFromNib() else {
+            return
+        }
         view.frame = self.bounds
         self.addSubview(view)
     }

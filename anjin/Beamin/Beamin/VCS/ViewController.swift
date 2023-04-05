@@ -30,7 +30,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func orederButtonTap(_ sender: Any) {
-        // 배달 화면
+        let orderSB = UIStoryboard(name: "Order", bundle: nil)
+        let orderVC = orderSB.instantiateViewController(withIdentifier: "order")
+        self.navigationController?.pushViewController(orderVC, animated: true)
     }
     
     

@@ -30,7 +30,7 @@ class OrderViewController: UIViewController {
     var buttonArr: [foodButton] = []
     let foodAssetsArr: [String] = [
         "chicken", "croissant", "cupcake", "hamburger", "Hetbahn",
-        "hotdog", "jjigae", "jogbal", "lunchbox", "night",
+        "hotdog", "jjigae", "jogbal", "lunch box", "night",
         "pizza", "ramen", "rice", "snack", "sushi"
     ]
     let foodNamesArr: [String] = [
@@ -51,8 +51,8 @@ class OrderViewController: UIViewController {
             foodButton13, foodButton14, foodButton15
         ]
         
-        var index = 0
-        buttonArr.forEach {
+        var index: Int = 0
+        buttonArr.forEach{
             $0.foodImage.image = UIImage(named: foodAssetsArr[index])
             $0.foodLabel.text = foodNamesArr[index]
             index += 1
