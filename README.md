@@ -6,14 +6,19 @@
 
 ### 스터디장  
 
-- 이안진  
+- 이안진 [@anjiniii](https://github.com/anjiniii)  
 
 ### 스터디원  
 
-- 유가은  
-- 이병직     
-- 임윤섭  
-- 정아현  
+- 유가은 [@slr-09](https://github.com/slr-09)  
+- 이병직 [@jikbb2](https://github.com/jikbb2)  
+- 임윤섭 [@YoonSubLim](https://github.com/YoonSubLim)  
+- 정아현 [@ahhyun1015](https://github.com/ahhyun1015)  
+
+### 유령  
+
+- 송채영 [@chaeyoung103](https://github.com/chaeyoung103)  
+- 황재상 [@jxx-sx](https://github.com/jxx-sx)  
 
 ## ✏️ 소스코드 관리  
 
