@@ -19,6 +19,8 @@
 		5164376129DD453A002211AB /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5164376029DD453A002211AB /* OrderViewController.swift */; };
 		5164376529DD4601002211AB /* BMHANNAPro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5164376329DD4601002211AB /* BMHANNAPro.ttf */; };
 		5164376629DD4601002211AB /* BMHANNAAir_ttf.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5164376429DD4601002211AB /* BMHANNAAir_ttf.ttf */; };
+		51C15D4029DD528900A36919 /* foodButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C15D3F29DD528900A36919 /* foodButton.swift */; };
+		51C15D4229DD529800A36919 /* foodButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51C15D4129DD529800A36919 /* foodButton.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		5164376029DD453A002211AB /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		5164376329DD4601002211AB /* BMHANNAPro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BMHANNAPro.ttf; sourceTree = "<group>"; };
 		5164376429DD4601002211AB /* BMHANNAAir_ttf.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BMHANNAAir_ttf.ttf; sourceTree = "<group>"; };
+		51C15D3F29DD528900A36919 /* foodButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodButton.swift; sourceTree = "<group>"; };
+		51C15D4129DD529800A36919 /* foodButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = foodButton.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 				5164375C29DD4445002211AB /* Storyboard */,
 				5164374429DD3FE9002211AB /* AppDelegate.swift */,
 				5164374629DD3FE9002211AB /* SceneDelegate.swift */,
+				51C15D3F29DD528900A36919 /* foodButton.swift */,
+				51C15D4129DD529800A36919 /* foodButton.xib */,
 				5164374D29DD3FEA002211AB /* Assets.xcassets */,
 				5164375229DD3FEA002211AB /* Info.plist */,
 			);
@@ -172,6 +178,7 @@
 				5164375129DD3FEA002211AB /* LaunchScreen.storyboard in Resources */,
 				5164374E29DD3FEA002211AB /* Assets.xcassets in Resources */,
 				5164376529DD4601002211AB /* BMHANNAPro.ttf in Resources */,
+				51C15D4229DD529800A36919 /* foodButton.xib in Resources */,
 				5164374C29DD3FE9002211AB /* Main.storyboard in Resources */,
 				5164376629DD4601002211AB /* BMHANNAAir_ttf.ttf in Resources */,
 			);
@@ -187,6 +194,7 @@
 				5164375F29DD452F002211AB /* LoginViewController.swift in Sources */,
 				5164376129DD453A002211AB /* OrderViewController.swift in Sources */,
 				5164374929DD3FE9002211AB /* ViewController.swift in Sources */,
+				51C15D4029DD528900A36919 /* foodButton.swift in Sources */,
 				5164374529DD3FE9002211AB /* AppDelegate.swift in Sources */,
 				5164374729DD3FE9002211AB /* SceneDelegate.swift in Sources */,
 			);
