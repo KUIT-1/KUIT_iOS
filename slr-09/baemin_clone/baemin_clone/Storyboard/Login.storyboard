@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="LoginViewController" customModule="baemin_clone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fro-7y-kEE" userLabel="XButton">
+                                <rect key="frame" x="16" y="75" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="CjE-pM-DXn"/>
+                                    <constraint firstAttribute="height" constant="25" id="yhH-Cd-zcd"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="xmark" catalog="system" title=""/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="아이디 또는 이메일" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="MeR-Nc-vWO" userLabel="ID Text Field">
+                                <rect key="frame" x="20" y="184" width="353" height="18.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4cc-2z-3zL" userLabel="PW Text Field">
+                                <rect key="frame" x="20" y="249.66666666666666" width="353" height="18.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UBu-fN-br3">
+                                <rect key="frame" x="20" y="218.66666666666666" width="353" height="1"/>
+                                <color key="backgroundColor" red="0.82745098039215681" green="0.82352941176470584" blue="0.82745098039215681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Grf-Kj-b6u"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NgK-sV-m0h">
+                                <rect key="frame" x="20" y="284.33333333333331" width="353" height="1"/>
+                                <color key="backgroundColor" red="0.82745098039215681" green="0.82352941176470584" blue="0.82745098039215681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="T6h-4t-Zm8"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZyX-M3-mUU">
+                                <rect key="frame" x="20" y="325.33333333333331" width="353" height="48"/>
+                                <color key="backgroundColor" name="BMmint"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="L4G-V1-P72"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="로그인">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5cd-MP-Dwk">
+                                <rect key="frame" x="203" y="381.33333333333331" width="90" height="29"/>
+                                <color key="tintColor" red="0.49803921569999998" green="0.49803921569999998" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="비밀번호 찾기">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
+                                </buttonConfiguration>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CGg-y5-3bh">
+                                <rect key="frame" x="196" y="390.33333333333331" width="1" height="10"/>
+                                <color key="backgroundColor" red="0.82745098039215681" green="0.82352941176470584" blue="0.82745098039215681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1" id="9Qi-ue-RCx"/>
+                                    <constraint firstAttribute="height" constant="10" id="U4m-os-dE8"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dg-vT-kmv">
+                                <rect key="frame" x="114" y="381.33333333333331" width="83" height="29"/>
+                                <color key="tintColor" red="0.49803921568627452" green="0.49803921568627452" blue="0.49803921568627452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="아이디 찾기 ">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4cc-2z-3zL" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="0fP-uK-N4g"/>
+                            <constraint firstItem="NgK-sV-m0h" firstAttribute="top" secondItem="4cc-2z-3zL" secondAttribute="bottom" constant="16" id="6Bu-HY-02B"/>
+                            <constraint firstItem="CGg-y5-3bh" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="topMargin" constant="336.32999999999998" id="8Gk-b7-PQ7"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ZyX-M3-mUU" secondAttribute="trailing" constant="20" id="9Zv-yK-46F"/>
+                            <constraint firstItem="ZyX-M3-mUU" firstAttribute="top" secondItem="NgK-sV-m0h" secondAttribute="bottom" constant="40" id="9zK-3P-sWB"/>
+                            <constraint firstItem="MeR-Nc-vWO" firstAttribute="top" secondItem="fro-7y-kEE" secondAttribute="bottom" constant="84" id="AKZ-BT-jgL"/>
+                            <constraint firstItem="UBu-fN-br3" firstAttribute="top" secondItem="MeR-Nc-vWO" secondAttribute="bottom" constant="16" id="CW9-QF-QMU"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="NgK-sV-m0h" secondAttribute="trailing" constant="20" id="G2o-Wz-6mK"/>
+                            <constraint firstItem="fro-7y-kEE" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="L0A-hj-8jV"/>
+                            <constraint firstItem="ZyX-M3-mUU" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="Ql6-HM-ZdI"/>
+                            <constraint firstItem="4cc-2z-3zL" firstAttribute="top" secondItem="UBu-fN-br3" secondAttribute="bottom" constant="30" id="RZo-dR-G76"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="UBu-fN-br3" secondAttribute="trailing" constant="20" id="V0u-BW-fXC"/>
+                            <constraint firstItem="0dg-vT-kmv" firstAttribute="top" secondItem="ZyX-M3-mUU" secondAttribute="bottom" constant="8" id="YoA-yI-yah"/>
+                            <constraint firstItem="NgK-sV-m0h" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="dOx-Yd-Orx"/>
+                            <constraint firstItem="fro-7y-kEE" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="16" id="eOZ-Rh-YxK"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="MeR-Nc-vWO" secondAttribute="trailing" constant="20" id="hW9-7c-Nok"/>
+                            <constraint firstItem="MeR-Nc-vWO" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="iNT-Cy-ACX"/>
+                            <constraint firstItem="CGg-y5-3bh" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="lQs-NO-0sj"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="4cc-2z-3zL" secondAttribute="trailing" constant="20" id="mpT-yH-Rp2"/>
+                            <constraint firstItem="5cd-MP-Dwk" firstAttribute="top" secondItem="ZyX-M3-mUU" secondAttribute="bottom" constant="8" id="tAq-02-5eL"/>
+                            <constraint firstItem="UBu-fN-br3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="wRR-wm-Y25"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="76" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+        <namedColor name="BMmint">
+            <color red="0.37299999594688416" green="0.74500000476837158" blue="0.73299998044967651" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
