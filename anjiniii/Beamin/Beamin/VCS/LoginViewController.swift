@@ -9,10 +9,25 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var loginButton: UIButton?
+    
+    @IBOutlet weak var facebookLoginButton: UIButton?
+    @IBOutlet weak var naverLoginButton: UIButton?
+    @IBOutlet weak var appleLoginButton: UIButton?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        facebookLoginButton?.contentMode = .scaleAspectFit
+        facebookLoginButton?.contentVerticalAlignment = .fill
+        
+//        naverLoginButton?.layer.cornerRadius = 6
+//        naverLoginButton?.layer.borderWidth = 1
+//        naverLoginButton?.layer.borderColor = UIColor.gray.cgColor
+//        
+//        appleLoginButton?.layer.cornerRadius = 6
+//        appleLoginButton?.layer.borderWidth = 1
+//        appleLoginButton?.layer.borderColor = UIColor.gray.cgColor
     }
     
     @IBAction func dismissLoginView(_ sender: Any) {
