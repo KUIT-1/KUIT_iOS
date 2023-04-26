@@ -17,6 +17,29 @@ class LoginViewController: UIViewController {
     }
     */
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+        print("[Login] viewDidLoad")
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        print("[Login] viewWillAppear")
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        print("[Login] viewDidAppear")
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        print("[Login] viewWillDisappear")
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        print("[Login] viewDidDisappear")
+    }
+    
+    
     @IBAction func loginButtonTab(_ sender: Any) {
         print("로그인 버튼 클릭")
     }

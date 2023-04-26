@@ -12,7 +12,25 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        print("[Main] viewDidLoad")
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        print("[Main] viewWillAppear")
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        print("[Main] viewDidAppear")
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        print("[Main] viewWillDisappear")
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        print("[Main] viewDidDisappear")
+    }
+    
     
     @IBAction func loginButtonTab(_ sender:Any){
         print("로그인 버튼 클릭")
