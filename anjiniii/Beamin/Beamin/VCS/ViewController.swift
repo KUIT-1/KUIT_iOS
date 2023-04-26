@@ -55,6 +55,12 @@ class ViewController: UIViewController {
         orderView.layer.shadowOpacity = 0.1
         orderView.layer.shadowRadius = 10
     }
-
+    
+    @IBAction func showLoginView(_ sender: Any) {
+        let loginSB = UIStoryboard(name: "Login", bundle: nil)
+        let LoginVC = loginSB.instantiateViewController(identifier: "LoginViewController")
+        self.present(LoginVC, animated: true)
+    }
+    
 }
 
