@@ -53,6 +53,45 @@ class ViewController: UIViewController {
 //        guard let loginVC2 = self.storyboard?.instantiateViewController(withIdentifier: "test") else { return }
         
         
+        // Optional 값을 출력해보자.
+        print()
+        print()
+        print("Optional 값을 출력해보자.")
+        print()
+        
+        var optionalStringNil: String? = nil
+        var optionalStringSub: String? = "Sub"
+        
+        // 1. 그냥 print
+        print(optionalStringNil)
+        print(optionalStringSub)
+        print(optionalStringSub!)
+        print()
+        
+        // 2. if let
+        print("optionalStringNil 의 값은 ?")
+        if let printString = optionalStringNil{
+            print(printString + " 이네요.")
+        }else{
+            print("nil 이네요")
+        }
+        print()
+        
+        // 3.
+        
+        print("optionalStringSub 의 값은 ?")
+        if let printString = optionalStringSub{
+            print(printString + " 이네요.")
+        }else{
+            print("nil 이네요")
+        }
+        
+        // 3. guard
+        guard let printString0 = optionalStringSub else { return }
+//        guard let printString1 = optionalStringNil else { return }
+        print(printString0) // 전역변수로 활용가능하다.
+        print()
+        
     }
 
 }
