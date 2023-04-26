@@ -159,34 +159,12 @@
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="AppleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="fUT-DF-gdI">
-                                <rect key="frame" x="16" y="747" width="240" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="O6y-tn-MSx"/>
-                                    <constraint firstAttribute="width" constant="30" id="TOb-DZ-XPp"/>
-                                </constraints>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="NaverLogo" translatesAutoresizingMaskIntoConstraints="NO" id="jlV-rf-2Vc">
-                                <rect key="frame" x="12" y="711" width="240" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="ZTW-OK-akb"/>
-                                    <constraint firstAttribute="height" constant="30" id="cng-6H-qc0"/>
-                                </constraints>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FacebookLogo" translatesAutoresizingMaskIntoConstraints="NO" id="sPo-Nf-ZYb">
-                                <rect key="frame" x="19" y="675" width="213" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="mAX-Gw-ScK"/>
-                                    <constraint firstAttribute="width" constant="30" id="tzx-kI-PMl"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ey6-1p-JtC" firstAttribute="top" secondItem="9hp-ml-OGZ" secondAttribute="bottom" constant="20" id="43u-C0-ivR"/>
                             <constraint firstItem="9JX-Jd-8zJ" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="4JV-Ez-Q33"/>
-                            <constraint firstItem="jlV-rf-2Vc" firstAttribute="centerY" secondItem="GT6-ks-C52" secondAttribute="centerY" id="5lx-iq-9Gc"/>
                             <constraint firstItem="GT6-ks-C52" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="Ce9-Rg-jRz"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="938-BN-OsV" secondAttribute="trailing" constant="30" id="Dvi-Wf-faX"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="GT6-ks-C52" secondAttribute="trailing" constant="30" id="Hhd-Wk-07B"/>
@@ -198,17 +176,14 @@
                             <constraint firstItem="UGF-KY-2E9" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="QGP-Zg-VmV"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="b7N-Zb-KVe" secondAttribute="trailing" constant="30" id="Rgb-eK-vTC"/>
                             <constraint firstItem="UGF-KY-2E9" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="SRt-9U-ZIq"/>
-                            <constraint firstItem="sPo-Nf-ZYb" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="TXQ-BN-7ee"/>
                             <constraint firstItem="938-BN-OsV" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="Ud6-wb-RGR"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="dUH-d5-RlV" secondAttribute="trailing" constant="30" id="YBs-0k-HNi"/>
                             <constraint firstItem="938-BN-OsV" firstAttribute="top" secondItem="b7N-Zb-KVe" secondAttribute="bottom" constant="20" id="ZfW-Sx-VLU"/>
-                            <constraint firstItem="sPo-Nf-ZYb" firstAttribute="centerY" secondItem="dUH-d5-RlV" secondAttribute="centerY" id="bn9-l4-Uan"/>
                             <constraint firstItem="9hp-ml-OGZ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="dNa-Y5-614"/>
                             <constraint firstItem="b7N-Zb-KVe" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="80" id="eBg-rX-0HM"/>
                             <constraint firstItem="EOu-fM-c28" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="keh-lD-gZO"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="ey6-1p-JtC" secondAttribute="bottom" constant="10" id="myB-ef-1dg"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="EOu-fM-c28" secondAttribute="trailing" constant="30" id="rft-Cu-ciU"/>
-                            <constraint firstItem="fUT-DF-gdI" firstAttribute="centerY" secondItem="9hp-ml-OGZ" secondAttribute="centerY" id="vkF-UY-rO1"/>
                             <constraint firstItem="EOu-fM-c28" firstAttribute="top" secondItem="938-BN-OsV" secondAttribute="bottom" constant="20" id="xIn-PV-6Wm"/>
                             <constraint firstItem="9JX-Jd-8zJ" firstAttribute="top" secondItem="EOu-fM-c28" secondAttribute="bottom" constant="10" id="xPv-L0-ECo"/>
                             <constraint firstItem="b7N-Zb-KVe" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="xRR-L1-awg"/>
@@ -227,9 +202,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="AppleLogo" width="72" height="72"/>
-        <image name="FacebookLogo" width="72" height="72"/>
-        <image name="NaverLogo" width="72" height="72"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

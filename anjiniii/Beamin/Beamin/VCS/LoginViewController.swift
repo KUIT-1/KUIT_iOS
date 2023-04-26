@@ -24,10 +24,8 @@ class LoginViewController: UIViewController {
 //        naverLoginButton?.layer.cornerRadius = 6
 //        naverLoginButton?.layer.borderWidth = 1
 //        naverLoginButton?.layer.borderColor = UIColor.gray.cgColor
-//        
-//        appleLoginButton?.layer.cornerRadius = 6
-//        appleLoginButton?.layer.borderWidth = 1
-//        appleLoginButton?.layer.borderColor = UIColor.gray.cgColor
+        
+        // TODO: add logo image at social login button
     }
     
     @IBAction func dismissLoginView(_ sender: Any) {
