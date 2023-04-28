@@ -45,7 +45,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x6x-Ay-8I9" secondAttribute="trailing" constant="83" id="gpz-Ui-u5l"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="nGJ-ui-viW"/>
+                    <navigationItem key="navigationItem" id="nGJ-ui-viW">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="square.and.arrow.up" catalog="system" id="QLH-Og-q6v"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -71,6 +73,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <namedColor name="BMmint">
             <color red="0.36899998784065247" green="0.74500000476837158" blue="0.72500002384185791" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>

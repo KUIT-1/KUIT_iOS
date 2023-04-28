@@ -13,10 +13,21 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         print("[Main] viewDidLoad")
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         print("[Main] viewWillAppear")
+        
+        title = "Navigation Bar"
+        
+        //        self.navigationController?.navigationBar.isHidden = false
+        self.navigationController?.navigationBar.backgroundColor = .systemMint
+        self.navigationController?.navigationBar.barStyle = .black
+        self.navigationController?.navigationBar.isTranslucent = false // 빈공간 채우기
+        self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.black, .backgroundColor: UIColor.white]
+        
+        self.navigationController?.navigationBar.tintColor = .gray
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -25,6 +36,8 @@ class ViewController: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         print("[Main] viewWillDisappear")
+        
+//        self.navigationController?.navigationBar.isHidden = false
     }
     
     override func viewDidDisappear(_ animated: Bool) {

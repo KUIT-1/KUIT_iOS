@@ -17,10 +17,18 @@ class LoginViewController: UIViewController {
     }
     */
     
+    @IBOutlet weak var faceLoginBtn: UIButton!
+    @IBOutlet weak var naverLoginBtn: UIButton!
+    @IBOutlet weak var appleLoginBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         print("[Login] viewDidLoad")
+        
+        // Life Cycle 함수를 활용해 개선할 수 있는 부분 개선하기
+        socialLoginBtnInit()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -64,5 +72,24 @@ class LoginViewController: UIViewController {
         print("Apple 로그인 버튼 클릭")
     }
     
-    
+    func socialLoginBtnInit(){
+        faceLoginBtn.layer.borderWidth = 2
+//        faceLoginBtn.layer.borderColor = Color
+        naverLoginBtn.layer.borderWidth = 2
+        appleLoginBtn.layer.borderWidth = 2
+
+
+//
+//        // 텍스트 변경
+//        orderLabel.text = "세상은 넓고\n맛집은 많다"
+//
+//        // 각 굴절
+//        orderBG.layer.cornerRadius = 10
+//        orderView.layer.cornerRadius = 10
+//
+//        // 그림자
+//        orderView.layer.shadowColor = UIColor.black.cgColor
+//        orderView.layer.shadowRadius = 10
+//        orderView.layer.shadowOpacity = 0.1
+    }
 }
