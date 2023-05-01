@@ -9,21 +9,30 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var FacebookLoginView: UIView!
+    @IBOutlet weak var AppleLoginView: UIView!
+    @IBOutlet weak var NaverLoginView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        socialLoginBtn()
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func socialLoginBtn() {
+        FacebookLoginView.layer.cornerRadius = 5
+        FacebookLoginView.layer.borderWidth = 1
+        FacebookLoginView.layer.borderColor = UIColor.lightGray.cgColor
+        
+        AppleLoginView.layer.cornerRadius = 5
+        AppleLoginView.layer.borderWidth = 1
+        AppleLoginView.layer.borderColor = UIColor.lightGray.cgColor
+        
+        NaverLoginView.layer.cornerRadius = 5
+        NaverLoginView.layer.borderWidth = 1
+        NaverLoginView.layer.borderColor = UIColor.lightGray.cgColor
     }
-    */
-
+    
+    
 }

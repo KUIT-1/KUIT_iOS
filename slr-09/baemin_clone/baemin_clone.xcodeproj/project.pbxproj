@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2309759D29F9039F00A7E0BA /* BMHANNAAir_ttf.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2309759C29F9039F00A7E0BA /* BMHANNAAir_ttf.ttf */; };
 		237DA76D29DC38E6008510C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237DA76C29DC38E6008510C5 /* AppDelegate.swift */; };
 		237DA76F29DC38E6008510C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237DA76E29DC38E6008510C5 /* SceneDelegate.swift */; };
 		237DA77129DC38E6008510C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237DA77029DC38E6008510C5 /* ViewController.swift */; };
@@ -17,13 +18,13 @@
 		237DA78329DC6355008510C5 /* Order.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 237DA78229DC6355008510C5 /* Order.storyboard */; };
 		237DA78629DC6AA5008510C5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237DA78529DC6AA5008510C5 /* LoginViewController.swift */; };
 		237DA78829DC6AB0008510C5 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237DA78729DC6AB0008510C5 /* OrderViewController.swift */; };
-		237DA78D29DC6BCD008510C5 /* BMHANNAPro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 237DA78B29DC6BCD008510C5 /* BMHANNAPro.ttf */; };
-		237DA78E29DC6BCD008510C5 /* BMHANNAAir_ttf.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 237DA78C29DC6BCD008510C5 /* BMHANNAAir_ttf.ttf */; };
 		2396141329DC86CB00B59517 /* foodButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2396141229DC86CB00B59517 /* foodButton.swift */; };
 		2396141529DC86F000B59517 /* foodButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2396141429DC86F000B59517 /* foodButton.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2309759C29F9039F00A7E0BA /* BMHANNAAir_ttf.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BMHANNAAir_ttf.ttf; sourceTree = "<group>"; };
+		2309759E29F903C200A7E0BA /* BMHANNAPro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BMHANNAPro.ttf; sourceTree = "<group>"; };
 		237DA76929DC38E6008510C5 /* baemin_clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = baemin_clone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		237DA76C29DC38E6008510C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		237DA76E29DC38E6008510C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,8 +37,6 @@
 		237DA78229DC6355008510C5 /* Order.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Order.storyboard; sourceTree = "<group>"; };
 		237DA78529DC6AA5008510C5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = baemin_clone/VCS/LoginViewController.swift; sourceTree = SOURCE_ROOT; };
 		237DA78729DC6AB0008510C5 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
-		237DA78B29DC6BCD008510C5 /* BMHANNAPro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = BMHANNAPro.ttf; path = "../../../../../../../Downloads/3주차/fonts/ttf/BMHANNAPro.ttf"; sourceTree = "<group>"; };
-		237DA78C29DC6BCD008510C5 /* BMHANNAAir_ttf.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = BMHANNAAir_ttf.ttf; path = "../../../../../../../Downloads/3주차/fonts/ttf/BMHANNAAir_ttf.ttf"; sourceTree = "<group>"; };
 		2396141229DC86CB00B59517 /* foodButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodButton.swift; sourceTree = "<group>"; };
 		2396141429DC86F000B59517 /* foodButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = foodButton.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,8 +108,8 @@
 		237DA78A29DC6BB5008510C5 /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				237DA78C29DC6BCD008510C5 /* BMHANNAAir_ttf.ttf */,
-				237DA78B29DC6BCD008510C5 /* BMHANNAPro.ttf */,
+				2309759E29F903C200A7E0BA /* BMHANNAPro.ttf */,
+				2309759C29F9039F00A7E0BA /* BMHANNAAir_ttf.ttf */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -174,13 +173,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				237DA78329DC6355008510C5 /* Order.storyboard in Resources */,
+				2309759D29F9039F00A7E0BA /* BMHANNAAir_ttf.ttf in Resources */,
 				237DA78129DC634E008510C5 /* Login.storyboard in Resources */,
 				237DA77929DC38E7008510C5 /* LaunchScreen.storyboard in Resources */,
 				2396141529DC86F000B59517 /* foodButton.xib in Resources */,
 				237DA77629DC38E7008510C5 /* Assets.xcassets in Resources */,
-				237DA78D29DC6BCD008510C5 /* BMHANNAPro.ttf in Resources */,
 				237DA77429DC38E6008510C5 /* Main.storyboard in Resources */,
-				237DA78E29DC6BCD008510C5 /* BMHANNAAir_ttf.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
