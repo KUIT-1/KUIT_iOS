@@ -7,7 +7,32 @@
 
 import UIKit
 
-class ViewController: UIViewController, protocol_Person {
+// 첫번째 화면 (데이터를 받을 화면)
+class ViewController: UIViewController, protocol_Person, dataDelegate {
+    
+    @IBOutlet weak var LB: UILabel!
+    var printString: String = ""
+    
+    override func viewDidAppear(_ animated: Bool) {
+        print(printString)
+    }
+    
+    @IBAction func BT(_ sender: Any) {
+        let VC1 = self.storyboard?.instantiateViewController(withIdentifier: "VC1") as! ViewController1
+        
+        // VC1 에서 일을 대신할 대신자는 self 나야
+        VC1.delegate = self
+        
+        self.navigationController?.pushViewController(VC1, animated: true)
+        
+    }
+    
+    // 프로토콜 채택
+    func dataSend(textData: String) {
+        LB.text = textData
+        printString = textData
+    }
+    
     
     var first_name: String  = "김" // first_name 은 get 이므로, var / let 모두 선언 가능하다.
 //    let first_name: String  = ""
@@ -68,3 +93,4 @@ extension protocol_Person{
         print(self.first_name + self.last_name)
     }
 }
+

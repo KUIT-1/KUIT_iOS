@@ -13,6 +13,7 @@
 		2EDD44FE2A00B27600656EAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EDD44FC2A00B27600656EAE /* Main.storyboard */; };
 		2EDD45002A00B27700656EAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EDD44FF2A00B27700656EAE /* Assets.xcassets */; };
 		2EDD45032A00B27700656EAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EDD45012A00B27700656EAE /* LaunchScreen.storyboard */; };
+		2EDD450B2A00BE4900656EAE /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDD450A2A00BE4900656EAE /* ViewController1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		2EDD44FF2A00B27700656EAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2EDD45022A00B27700656EAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2EDD45042A00B27700656EAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EDD450A2A00BE4900656EAE /* ViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				2EDD44F62A00B27600656EAE /* AppDelegate.swift */,
 				2EDD44F82A00B27600656EAE /* SceneDelegate.swift */,
 				2EDD44FA2A00B27600656EAE /* ViewController.swift */,
+				2EDD450A2A00BE4900656EAE /* ViewController1.swift */,
 				2EDD44FC2A00B27600656EAE /* Main.storyboard */,
 				2EDD44FF2A00B27700656EAE /* Assets.xcassets */,
 				2EDD45012A00B27700656EAE /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EDD450B2A00BE4900656EAE /* ViewController1.swift in Sources */,
 				2EDD44FB2A00B27600656EAE /* ViewController.swift in Sources */,
 				2EDD44F72A00B27600656EAE /* AppDelegate.swift in Sources */,
 				2EDD44F92A00B27600656EAE /* SceneDelegate.swift in Sources */,
