@@ -13,6 +13,7 @@
 		515E26302A010130006C3FE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 515E262E2A010130006C3FE5 /* Main.storyboard */; };
 		515E26322A010131006C3FE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 515E26312A010131006C3FE5 /* Assets.xcassets */; };
 		515E26352A010131006C3FE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 515E26332A010131006C3FE5 /* LaunchScreen.storyboard */; };
+		516C773F2A0239CF00BB3171 /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516C773E2A0239CF00BB3171 /* ViewController1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		515E26312A010131006C3FE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		515E26342A010131006C3FE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		515E26362A010131006C3FE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		516C773E2A0239CF00BB3171 /* ViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				515E26282A010130006C3FE5 /* AppDelegate.swift */,
 				515E262A2A010130006C3FE5 /* SceneDelegate.swift */,
 				515E262C2A010130006C3FE5 /* ViewController.swift */,
+				516C773E2A0239CF00BB3171 /* ViewController1.swift */,
 				515E262E2A010130006C3FE5 /* Main.storyboard */,
 				515E26312A010131006C3FE5 /* Assets.xcassets */,
 				515E26332A010131006C3FE5 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				516C773F2A0239CF00BB3171 /* ViewController1.swift in Sources */,
 				515E262D2A010130006C3FE5 /* ViewController.swift in Sources */,
 				515E26292A010130006C3FE5 /* AppDelegate.swift in Sources */,
 				515E262B2A010130006C3FE5 /* SceneDelegate.swift in Sources */,

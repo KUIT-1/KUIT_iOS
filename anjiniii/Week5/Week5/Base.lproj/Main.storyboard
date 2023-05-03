@@ -9,9 +9,83 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="d0p-u8-jmn">
+            <objects>
+                <viewController storyboardIdentifier="VC1" id="Sen-Y3-Sn0" customClass="ViewController" customModule="Week5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LZU-lo-pOa">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1gl-bw-ynj">
+                                <rect key="frame" x="159" y="409" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="button:" destination="Sen-Y3-Sn0" eventType="touchUpInside" id="0PJ-Oe-H4x"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AT6-RP-oOT">
+                                <rect key="frame" x="100" y="203" width="193" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UpX-6v-6cB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UpX-6v-6cB" firstAttribute="trailing" secondItem="AT6-RP-oOT" secondAttribute="trailing" constant="100" id="J1M-of-ejh"/>
+                            <constraint firstItem="AT6-RP-oOT" firstAttribute="top" secondItem="UpX-6v-6cB" secondAttribute="top" constant="100" id="rkk-5m-ntU"/>
+                            <constraint firstItem="AT6-RP-oOT" firstAttribute="leading" secondItem="UpX-6v-6cB" secondAttribute="leading" constant="100" id="vqo-8F-ajJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="4MB-AT-tk7"/>
+                    <connections>
+                        <outlet property="button" destination="1gl-bw-ynj" id="ftI-2E-Kgp"/>
+                        <outlet property="label" destination="AT6-RP-oOT" id="zwc-9b-caU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9qI-hd-HWj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1040.4580152671756" y="-768.30985915492965"/>
+        </scene>
+        <!--View Controller1-->
+        <scene sceneID="UOW-Jv-lGj">
+            <objects>
+                <viewController storyboardIdentifier="VC2" id="8li-oZ-EeX" customClass="ViewController1" customModule="Week5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vey-bc-zMY">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TB0-GV-ebL">
+                                <rect key="frame" x="96.666666666666686" y="159" width="200" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="grk-V2-0Qb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nuz-x5-kDf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TB0-GV-ebL" firstAttribute="centerX" secondItem="nuz-x5-kDf" secondAttribute="centerX" id="2ad-d3-GKj"/>
+                            <constraint firstItem="TB0-GV-ebL" firstAttribute="top" secondItem="nuz-x5-kDf" secondAttribute="top" constant="100" id="pld-F9-Vt3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="TB0-GV-ebL" id="47u-05-bQE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qzo-U8-UT6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1799.2366412213739" y="-768.30985915492965"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Week5" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -94,6 +168,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Olu-B0-scM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="873" y="-27"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XTI-Cc-fEV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="47P-st-ohi" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VyI-CX-eWI">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Sen-Y3-Sn0" kind="relationship" relationship="rootViewController" id="Vr4-Sy-AG3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cqX-fN-Hmh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113.74045801526717" y="-768.30985915492965"/>
         </scene>
     </scenes>
     <resources>
