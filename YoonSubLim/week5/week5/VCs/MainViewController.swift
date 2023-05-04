@@ -13,6 +13,15 @@ class MainViewController: UIViewController {
     
     @IBOutlet weak var TF: UITextField!
     
+    @IBAction func moveToStoreList(_ sender: Any) {
+        
+        // 버튼 클릭시 이동
+        
+        let VC = self.storyboard?.instantiateViewController(withIdentifier: "storeListVC") as! TableViewController_Mission
+        
+        self.navigationController?.pushViewController(VC, animated: true)
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
