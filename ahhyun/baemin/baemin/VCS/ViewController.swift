@@ -22,8 +22,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        orderButtonInit()
-        order1ButtonInit()
+        /*orderButtonInit()
+        order1ButtonInit()*/
         //navigationBarInit()
     }
     
@@ -68,7 +68,7 @@ class ViewController: UIViewController {
         self.navigationController?.pushViewController(orderVC, animated: true)
     }
     
-    
+    /*
     func orderButtonInit(){
         orderLabel.text = "세상은 넓고\n맛집은 많다"
         orderBG.layer.cornerRadius = 10
@@ -85,6 +85,6 @@ class ViewController: UIViewController {
         order1View.layer.shadowColor = UIColor.black.cgColor
         order1View.layer.shadowOpacity = 0.1
         order1View.layer.shadowRadius = 10
-    }
+    }*/
 
 }
