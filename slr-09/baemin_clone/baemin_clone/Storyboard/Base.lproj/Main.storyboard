@@ -368,9 +368,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="zgW-nz-Ahh"/>
                     <connections>
+                        <outlet property="BMStoreLabel" destination="vNy-sr-IJF" id="bYI-OF-q1r"/>
                         <outlet property="BMStoreView" destination="Hxp-97-0h0" id="1Fg-ih-es9"/>
+                        <outlet property="BmartLabel" destination="nx8-A0-FPq" id="7Ab-mp-qdI"/>
                         <outlet property="BmartView" destination="5dz-WX-Zot" id="KVJ-GZ-ZlU"/>
-                        <outlet property="freshFoodView" destination="krh-HQ-3Go" id="ZVB-GE-UCW"/>
+                        <outlet property="freshFoodLabel" destination="7p0-Z0-z0r" id="rFL-9V-yAT"/>
+                        <outlet property="freshFoodView" destination="krh-HQ-3Go" id="LTx-RZ-Xnm"/>
                         <outlet property="order1BG" destination="TVc-rY-hbs" id="TdH-3X-L7n"/>
                         <outlet property="order1Label" destination="TcO-n3-XFF" id="0g0-rP-HDQ"/>
                         <outlet property="order1View" destination="Jh8-uE-AT4" id="591-9b-OHd"/>

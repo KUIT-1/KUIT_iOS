@@ -22,10 +22,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var packageView: UIView!
     
     @IBOutlet weak var BmartView: UIView!
+    @IBOutlet weak var BmartLabel: UILabel!
     
     @IBOutlet weak var freshFoodView: UIView!
-    
+    @IBOutlet weak var freshFoodLabel: UILabel!
+
     @IBOutlet weak var BMStoreView: UIView!
+    @IBOutlet weak var BMStoreLabel: UILabel!
     
     override func loadView() {
         super.loadView()
@@ -64,6 +67,18 @@ class ViewController: UIViewController {
         order1View.layer.shadowColor = UIColor.black.cgColor
         order1View.layer.shadowOpacity = 0.1
         order1View.layer.shadowRadius = 10
+        
+        packageView.layer.cornerRadius = 10
+        
+        BmartView.layer.cornerRadius = 10
+        BmartLabel.text = "27분 후 도착!"
+        
+        freshFoodView.layer.cornerRadius = 10
+        freshFoodLabel.text = "제철 신선 식품\n지금 바로 배달"
+        
+        BMStoreView.layer.cornerRadius = 10
+        BMStoreLabel.text = "정관장의 선물세트를 바로 배달!"
+        
     }
     
     func navigationBarInit() {
