@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BMHANNAPro.ttf">
+            <string>BMHANNAPro</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="foodButton" customModule="Baemin" customModuleProvider="target">
+            <connections>
+                <outlet property="foodButton" destination="YQY-kc-2r2" id="VIz-sC-d5O"/>
+                <outlet property="foodImage" destination="vNV-YT-FGm" id="pfw-w5-JAE"/>
+                <outlet property="foodLabel" destination="m6N-OZ-MLh" id="W1w-D4-IQg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="381" height="385"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vNV-YT-FGm">
+                    <rect key="frame" x="46" y="0.0" width="289" height="288.66666666666669"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="vNV-YT-FGm" secondAttribute="height" multiplier="1:1" id="Agg-jf-Ahj"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6N-OZ-MLh">
+                    <rect key="frame" x="0.0" y="288.66666666666669" width="381" height="96.333333333333314"/>
+                    <fontDescription key="fontDescription" name="BMHANNAPro" family="BM HANNA Pro" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQY-kc-2r2">
+                    <rect key="frame" x="0.0" y="0.0" width="381" height="385"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title=""/>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="vNV-YT-FGm" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="7zI-Ps-RSI"/>
+                <constraint firstItem="m6N-OZ-MLh" firstAttribute="height" secondItem="vNV-YT-FGm" secondAttribute="height" multiplier="1:3" id="Aaa-LT-KPG"/>
+                <constraint firstAttribute="bottom" secondItem="YQY-kc-2r2" secondAttribute="bottom" id="OfK-Ds-cJC"/>
+                <constraint firstItem="m6N-OZ-MLh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Zeh-3A-z52"/>
+                <constraint firstItem="vNV-YT-FGm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="cVN-aM-QMo"/>
+                <constraint firstAttribute="bottom" secondItem="m6N-OZ-MLh" secondAttribute="bottom" id="cfQ-hK-61R"/>
+                <constraint firstAttribute="trailing" secondItem="m6N-OZ-MLh" secondAttribute="trailing" id="fiC-Rn-4WW"/>
+                <constraint firstItem="YQY-kc-2r2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="oZ3-vL-Qbc"/>
+                <constraint firstItem="m6N-OZ-MLh" firstAttribute="top" secondItem="vNV-YT-FGm" secondAttribute="bottom" id="ppw-gv-lsm"/>
+                <constraint firstItem="YQY-kc-2r2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="tFq-sG-JcM"/>
+                <constraint firstAttribute="trailing" secondItem="YQY-kc-2r2" secondAttribute="trailing" id="uUM-Ul-jdA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="127" y="-48"/>
+        </view>
+    </objects>
+</document>
