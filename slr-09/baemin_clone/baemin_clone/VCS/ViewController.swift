@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var searchBarView: UIView!
+    
     @IBOutlet weak var orderView: UIView!
     @IBOutlet weak var orderBG: UIImageView!
     @IBOutlet weak var orderLabel: UILabel!
@@ -16,6 +18,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var order1View: UIView!
     @IBOutlet weak var order1BG: UIImageView!
     @IBOutlet weak var order1Label: UILabel!
+    
+    @IBOutlet weak var packageView: UIView!
+    
+    @IBOutlet weak var BmartView: UIView!
+    
+    @IBOutlet weak var freshFoodView: UIView!
+    
+    @IBOutlet weak var BMStoreView: UIView!
     
     override func loadView() {
         super.loadView()
