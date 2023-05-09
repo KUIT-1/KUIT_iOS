@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E5777532A0AB0B50081A47A /* Extension_UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5777522A0AB0B50081A47A /* Extension_UIView.swift */; };
+		2E57775C2A0AD04E0081A47A /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 2E57775B2A0AD04E0081A47A /* fonts */; };
 		2E6DE2FB2A0A9D4900B4E07F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6DE2FA2A0A9D4900B4E07F /* AppDelegate.swift */; };
 		2E6DE2FD2A0A9D4900B4E07F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6DE2FC2A0A9D4900B4E07F /* SceneDelegate.swift */; };
 		2E6DE2FF2A0A9D4900B4E07F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6DE2FE2A0A9D4900B4E07F /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E5777522A0AB0B50081A47A /* Extension_UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension_UIView.swift; sourceTree = "<group>"; };
+		2E57775B2A0AD04E0081A47A /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = fonts; path = "../../../../../../Desktop/iOS/3주차Assets/fonts"; sourceTree = "<group>"; };
 		2E6DE2F72A0A9D4900B4E07F /* week6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = week6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E6DE2FA2A0A9D4900B4E07F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E6DE2FC2A0A9D4900B4E07F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +41,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E57774E2A0AAC9E0081A47A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2E6DE3002A0A9D4900B4E07F /* Main.storyboard */,
+				2E6DE3052A0A9D4A00B4E07F /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2E57774F2A0AACAD0081A47A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2E6DE2FE2A0A9D4900B4E07F /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2E5777502A0AACC90081A47A /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				2E6DE3032A0A9D4A00B4E07F /* Assets.xcassets */,
+				2E6DE3082A0A9D4A00B4E07F /* Info.plist */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		2E5777512A0AADA60081A47A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2E5777522A0AB0B50081A47A /* Extension_UIView.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		2E6DE2EE2A0A9D4900B4E07F = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +94,13 @@
 		2E6DE2F92A0A9D4900B4E07F /* week6 */ = {
 			isa = PBXGroup;
 			children = (
-				2E6DE2FA2A0A9D4900B4E07F /* AppDelegate.swift */,
+				2E57775B2A0AD04E0081A47A /* fonts */,
+				2E5777512A0AADA60081A47A /* Extension */,
 				2E6DE2FC2A0A9D4900B4E07F /* SceneDelegate.swift */,
-				2E6DE2FE2A0A9D4900B4E07F /* ViewController.swift */,
-				2E6DE3002A0A9D4900B4E07F /* Main.storyboard */,
-				2E6DE3032A0A9D4A00B4E07F /* Assets.xcassets */,
-				2E6DE3052A0A9D4A00B4E07F /* LaunchScreen.storyboard */,
-				2E6DE3082A0A9D4A00B4E07F /* Info.plist */,
+				2E6DE2FA2A0A9D4900B4E07F /* AppDelegate.swift */,
+				2E57774E2A0AAC9E0081A47A /* Storyboards */,
+				2E57774F2A0AACAD0081A47A /* ViewControllers */,
+				2E5777502A0AACC90081A47A /* Settings */,
 			);
 			path = week6;
 			sourceTree = "<group>";
@@ -127,6 +165,7 @@
 			files = (
 				2E6DE3072A0A9D4A00B4E07F /* LaunchScreen.storyboard in Resources */,
 				2E6DE3042A0A9D4A00B4E07F /* Assets.xcassets in Resources */,
+				2E57775C2A0AD04E0081A47A /* fonts in Resources */,
 				2E6DE3022A0A9D4900B4E07F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +179,7 @@
 			files = (
 				2E6DE2FF2A0A9D4900B4E07F /* ViewController.swift in Sources */,
 				2E6DE2FB2A0A9D4900B4E07F /* AppDelegate.swift in Sources */,
+				2E5777532A0AB0B50081A47A /* Extension_UIView.swift in Sources */,
 				2E6DE2FD2A0A9D4900B4E07F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,7 +329,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NJWZGJTLYN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = week6/Info.plist;
+				INFOPLIST_FILE = week6/Settings/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "배다리 민족";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -321,7 +361,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NJWZGJTLYN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = week6/Info.plist;
+				INFOPLIST_FILE = week6/Settings/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "배다리 민족";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
