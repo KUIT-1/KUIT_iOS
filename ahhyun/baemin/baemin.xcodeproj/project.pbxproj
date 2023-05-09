@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1AE219EB29FFE3500040150C /* TableView_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE219EA29FFE3500040150C /* TableView_ViewController.swift */; };
+		1AE219ED29FFE3A10040150C /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE219EC29FFE3A10040150C /* MyCell.swift */; };
 		1AE4C13429DA71E40049E539 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE4C13329DA71E40049E539 /* AppDelegate.swift */; };
 		1AE4C13629DA71E40049E539 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE4C13529DA71E40049E539 /* SceneDelegate.swift */; };
 		1AE4C13829DA71E40049E539 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE4C13729DA71E40049E539 /* ViewController.swift */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1AE219EA29FFE3500040150C /* TableView_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView_ViewController.swift; sourceTree = "<group>"; };
+		1AE219EC29FFE3A10040150C /* MyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
 		1AE4C13029DA71E40049E539 /* baemin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = baemin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AE4C13329DA71E40049E539 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1AE4C13529DA71E40049E539 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				1AE4C13729DA71E40049E539 /* ViewController.swift */,
+				1AE219EA29FFE3500040150C /* TableView_ViewController.swift */,
+				1AE219EC29FFE3A10040150C /* MyCell.swift */,
 				1AE4C14E29DA7F430049E539 /* LoginViewController.swift */,
 				1AE4C15029DA7F5B0049E539 /* OrderViewController.swift */,
 			);
@@ -195,6 +201,8 @@
 				1AE4C15129DA7F5B0049E539 /* OrderViewController.swift in Sources */,
 				1AE4C13829DA71E40049E539 /* ViewController.swift in Sources */,
 				1AE4C15929DAAFE20049E539 /* foodButton.swift in Sources */,
+				1AE219EB29FFE3500040150C /* TableView_ViewController.swift in Sources */,
+				1AE219ED29FFE3A10040150C /* MyCell.swift in Sources */,
 				1AE4C13429DA71E40049E539 /* AppDelegate.swift in Sources */,
 				1AE4C13629DA71E40049E539 /* SceneDelegate.swift in Sources */,
 			);
