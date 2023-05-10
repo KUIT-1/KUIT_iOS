@@ -38,7 +38,6 @@ class OrderViewController: UIViewController, UICollectionViewDataSource, UIColle
         return CGSize(width: collectionView.frame.width/4, height: collectionView.frame.height)
     }
     
-    
     /*
         for Table View
     */

@@ -164,6 +164,8 @@
                                                         <buttonConfiguration key="configuration" style="plain"/>
                                                         <connections>
                                                             <action selector="orderButtonTab:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xdn-KA-E1T"/>
+                                                            <action selector="orderButtonTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="IZh-Gg-cQx"/>
+                                                            <action selector="orderButtonTouchUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="Cgs-QG-xUC"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -309,6 +311,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="lHl-OG-zfD"/>
+                    <connections>
+                        <outlet property="orderButton" destination="Ppe-TU-ahW" id="G3L-g3-ShG"/>
+                        <outlet property="orderButtonView" destination="Ppw-ck-DxF" id="Ke1-Ha-VCW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

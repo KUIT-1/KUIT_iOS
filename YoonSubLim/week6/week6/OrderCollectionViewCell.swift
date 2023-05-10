@@ -19,7 +19,7 @@ class OrderCollectionViewCell: UICollectionViewCell {
                 
                 // 기존의 모든 tableviewcell 들을 날리고, 새로 그려줘야 함.
                 
-                
+
             }
             else{
                 print(categoryName.text! + "해제")
