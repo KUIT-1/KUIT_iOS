@@ -223,6 +223,9 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="349" height="89"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain"/>
+                                                        <connections>
+                                                            <action selector="takeoutButtonTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="gAp-WS-ceZ"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -312,8 +315,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="lHl-OG-zfD"/>
                     <connections>
-                        <outlet property="orderButton" destination="Ppe-TU-ahW" id="G3L-g3-ShG"/>
                         <outlet property="orderButtonView" destination="Ppw-ck-DxF" id="Ke1-Ha-VCW"/>
+                        <outlet property="takeoutViewLeadingConstraint" destination="2AM-Hj-iUY" id="WGe-2R-5Dq"/>
+                        <outlet property="takeoutViewTrailingConstraint" destination="Xug-6R-hAn" id="S2B-hr-bFh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
