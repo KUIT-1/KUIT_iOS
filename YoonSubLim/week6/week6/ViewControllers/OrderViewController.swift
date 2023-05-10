@@ -38,6 +38,11 @@ class OrderViewController: UIViewController, UICollectionViewDataSource, UIColle
         return CGSize(width: collectionView.frame.width/4, height: collectionView.frame.height)
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        orderTableView.reloadData()
+    }
+    
+    
     /*
         for Table View
     */
