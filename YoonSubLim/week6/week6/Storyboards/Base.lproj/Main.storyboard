@@ -314,20 +314,82 @@
             </objects>
             <point key="canvasLocation" x="1066.4122137404579" y="-2.1126760563380285"/>
         </scene>
-        <!--View Controller-->
+        <!--Item-->
         <scene sceneID="340-iN-Hol">
             <objects>
-                <viewController storyboardIdentifier="orderStoryboard" id="u9B-6N-mVu" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="orderStoryboard" id="u9B-6N-mVu" customClass="OrderViewController" customModule="week6" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="faa-y6-PMi">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="KR8-3N-qRg">
+                                <rect key="frame" x="0.0" y="59" width="393" height="66"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="TrC-8r-6i8"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="GR6-5K-RHi">
+                                    <size key="itemSize" width="144" height="66.666666666666671"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="categoryCell" id="zJV-68-xIz" customClass="OrderCollectionViewCell" customModule="week6" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="-0.33333333333333331" width="144" height="66.666666666666671"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="YbR-Bj-JpE">
+                                            <rect key="frame" x="0.0" y="0.0" width="144" height="66.666666666666671"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1yB-Bt-yCW">
+                                                    <rect key="frame" x="0.0" y="0.0" width="144" height="67"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="049-Ye-UST">
+                                                            <rect key="frame" x="48" y="22" width="48" height="24"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="049-Ye-UST" firstAttribute="centerX" secondItem="1yB-Bt-yCW" secondAttribute="centerX" id="gYA-Mu-Ji8"/>
+                                                        <constraint firstItem="049-Ye-UST" firstAttribute="centerY" secondItem="1yB-Bt-yCW" secondAttribute="centerY" id="hA4-V6-eLl"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="1yB-Bt-yCW" secondAttribute="bottom" id="Mr8-KN-FtK"/>
+                                                <constraint firstItem="1yB-Bt-yCW" firstAttribute="leading" secondItem="YbR-Bj-JpE" secondAttribute="leading" id="YVg-1M-LlA"/>
+                                                <constraint firstAttribute="trailing" secondItem="1yB-Bt-yCW" secondAttribute="trailing" id="mMl-4x-C6W"/>
+                                                <constraint firstItem="1yB-Bt-yCW" firstAttribute="top" secondItem="YbR-Bj-JpE" secondAttribute="top" id="oTU-b5-Hsh"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="144" height="66.666666666666671"/>
+                                        <connections>
+                                            <outlet property="categoryName" destination="049-Ye-UST" id="L59-5O-Mrn"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="mCZ-Lr-uca"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="KR8-3N-qRg" firstAttribute="top" secondItem="mCZ-Lr-uca" secondAttribute="top" id="2Wo-PG-vnj"/>
+                            <constraint firstItem="KR8-3N-qRg" firstAttribute="trailing" secondItem="mCZ-Lr-uca" secondAttribute="trailing" id="Fw2-v6-ef4"/>
+                            <constraint firstItem="KR8-3N-qRg" firstAttribute="leading" secondItem="mCZ-Lr-uca" secondAttribute="leading" id="T5j-2r-5IR"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="w8j-IV-TG2"/>
+                    <connections>
+                        <outlet property="orderCollectionView" destination="KR8-3N-qRg" id="jBC-VO-RBc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LFH-5L-mA3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1938" y="-2"/>
+            <point key="canvasLocation" x="2052.6717557251909" y="-2.1126760563380285"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8oa-4x-2Zw">
