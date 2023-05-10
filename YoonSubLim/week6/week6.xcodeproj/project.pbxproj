@@ -11,6 +11,7 @@
 		2E57775C2A0AD04E0081A47A /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 2E57775B2A0AD04E0081A47A /* fonts */; };
 		2E57775E2A0B4C9E0081A47A /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E57775D2A0B4C9E0081A47A /* OrderViewController.swift */; };
 		2E5777602A0B4DAC0081A47A /* OrderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E57775F2A0B4DAC0081A47A /* OrderCollectionViewCell.swift */; };
+		2E5777622A0B68BF0081A47A /* StoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5777612A0B68BF0081A47A /* StoreTableViewCell.swift */; };
 		2E6DE2FB2A0A9D4900B4E07F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6DE2FA2A0A9D4900B4E07F /* AppDelegate.swift */; };
 		2E6DE2FD2A0A9D4900B4E07F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6DE2FC2A0A9D4900B4E07F /* SceneDelegate.swift */; };
 		2E6DE2FF2A0A9D4900B4E07F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6DE2FE2A0A9D4900B4E07F /* ViewController.swift */; };
@@ -24,6 +25,8 @@
 		2E57775B2A0AD04E0081A47A /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = fonts; path = "../../../../../../Desktop/iOS/3주차Assets/fonts"; sourceTree = "<group>"; };
 		2E57775D2A0B4C9E0081A47A /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		2E57775F2A0B4DAC0081A47A /* OrderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCollectionViewCell.swift; sourceTree = "<group>"; };
+		2E5777612A0B68BF0081A47A /* StoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreTableViewCell.swift; sourceTree = "<group>"; };
+		2E5777632A0B7B6B0081A47A /* Progress.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Progress.md; sourceTree = "<group>"; };
 		2E6DE2F72A0A9D4900B4E07F /* week6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = week6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E6DE2FA2A0A9D4900B4E07F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E6DE2FC2A0A9D4900B4E07F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +86,7 @@
 		2E6DE2EE2A0A9D4900B4E07F = {
 			isa = PBXGroup;
 			children = (
+				2E5777632A0B7B6B0081A47A /* Progress.md */,
 				2E6DE2F92A0A9D4900B4E07F /* week6 */,
 				2E6DE2F82A0A9D4900B4E07F /* Products */,
 			);
@@ -100,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				2E57775F2A0B4DAC0081A47A /* OrderCollectionViewCell.swift */,
+				2E5777612A0B68BF0081A47A /* StoreTableViewCell.swift */,
 				2E57775B2A0AD04E0081A47A /* fonts */,
 				2E5777512A0AADA60081A47A /* Extension */,
 				2E6DE2FC2A0A9D4900B4E07F /* SceneDelegate.swift */,
@@ -188,6 +193,7 @@
 				2E57775E2A0B4C9E0081A47A /* OrderViewController.swift in Sources */,
 				2E6DE2FB2A0A9D4900B4E07F /* AppDelegate.swift in Sources */,
 				2E5777532A0AB0B50081A47A /* Extension_UIView.swift in Sources */,
+				2E5777622A0B68BF0081A47A /* StoreTableViewCell.swift in Sources */,
 				2E6DE2FD2A0A9D4900B4E07F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
