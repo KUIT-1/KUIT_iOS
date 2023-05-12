@@ -29,4 +29,7 @@ class OrderCollectionViewCell: UICollectionViewCell {
 
     }
     
+//    override class func awakeFromNib() {
+//        <#code#>
+//    }
 }

@@ -4,16 +4,11 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string></string>
+		<string>BMHANNAAir_ttf.ttf</string>
+		<string>BMHANNAPro.ttf</string>
+		<string>BMHANNA_11yrs_ttf.ttf</string>
+		<string>BMHANNA_11yrs_otf.otf</string>
 	</array>
-	<key>item0</key>
-	<string>BMHANNAAir_ttf.ttf</string>
-	<key>item1</key>
-	<string>BMHANNAPro.ttf</string>
-	<key>item2</key>
-	<string>BMHANNA_11yrs_ttf.ttf</string>
-	<key>item3</key>
-	<string>BMHANNA_11yrs_otf.otf</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
