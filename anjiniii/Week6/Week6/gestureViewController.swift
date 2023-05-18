@@ -9,6 +9,7 @@ import UIKit
 
 class gestureViewController: UIViewController {
     @IBOutlet var tapGesture: UITapGestureRecognizer!
+    @IBOutlet weak var buttonWidth: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,4 +29,17 @@ class gestureViewController: UIViewController {
     @objc func isViewTappedThird(){
         print("view is tapped 3!")
     }
+    
+    @IBAction func touchUpInside(_ sender: Any) {
+        buttonWidth.constant = 200
+    }
+    
+    @IBAction func longPressGesture(_ sender: Any) {
+        buttonWidth.constant = 160
+    }
+    
+    @IBAction func touchUpOutside(_ sender: Any) {
+        buttonWidth.constant = 240
+    }
+    
 }

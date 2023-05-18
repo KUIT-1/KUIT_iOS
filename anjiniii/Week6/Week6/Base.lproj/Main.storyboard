@@ -156,16 +156,40 @@
                                     <outletCollection property="gestureRecognizers" destination="fyK-4e-czO" appends="YES" id="NEk-IS-tdo"/>
                                 </connections>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ViT-ZG-8kU">
+                                <rect key="frame" x="60" y="407" width="200" height="60"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="2r6-Jp-Szw"/>
+                                    <constraint firstAttribute="height" constant="60" id="ARd-xw-e4J"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="33"/>
+                                    <color key="baseForegroundColor" systemColor="systemBrownColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="touchUpInside:" destination="v7R-jh-pPd" eventType="touchUpInside" id="fm1-9h-jfj"/>
+                                    <action selector="touchUpOutside:" destination="v7R-jh-pPd" eventType="touchUpOutside" id="fWg-nc-I6O"/>
+                                    <outletCollection property="gestureRecognizers" destination="36V-cj-LMJ" appends="YES" id="XAJ-1p-Usp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="EIV-Nc-mFH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="50y-5Z-jAU" firstAttribute="leading" secondItem="EIV-Nc-mFH" secondAttribute="leading" constant="80" id="K9l-cR-1eo"/>
                             <constraint firstItem="EIV-Nc-mFH" firstAttribute="trailing" secondItem="50y-5Z-jAU" secondAttribute="trailing" constant="80" id="Snk-32-Mo5"/>
+                            <constraint firstItem="ViT-ZG-8kU" firstAttribute="leading" secondItem="EIV-Nc-mFH" secondAttribute="leading" constant="60" id="Zdn-Ca-tas"/>
+                            <constraint firstItem="ViT-ZG-8kU" firstAttribute="top" secondItem="50y-5Z-jAU" secondAttribute="bottom" constant="120" id="eQn-DZ-tsr"/>
                             <constraint firstItem="50y-5Z-jAU" firstAttribute="top" secondItem="EIV-Nc-mFH" secondAttribute="top" constant="100" id="ywh-7Y-NmH"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="buttonWidth" destination="2r6-Jp-Szw" id="SIA-do-Y2n"/>
                         <outlet property="tapGesture" destination="fyK-4e-czO" id="6sk-nW-t27"/>
                     </connections>
                 </viewController>
@@ -175,6 +199,11 @@
                         <action selector="isViewTapped:" destination="v7R-jh-pPd" id="N0p-HJ-Lah"/>
                     </connections>
                 </tapGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="36V-cj-LMJ">
+                    <connections>
+                        <action selector="longPressGesture:" destination="v7R-jh-pPd" id="bnw-32-IVl"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1712" y="-27"/>
         </scene>
@@ -188,6 +217,9 @@
         </systemColor>
         <systemColor name="systemBrownColor">
             <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
