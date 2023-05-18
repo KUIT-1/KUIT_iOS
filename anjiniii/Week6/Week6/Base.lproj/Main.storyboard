@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="G5y-Ss-bfH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="v7R-jh-pPd">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Week6" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="viewController" id="BYZ-38-t0r" customClass="ViewController" customModule="Week6" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -137,18 +137,44 @@
             </objects>
             <point key="canvasLocation" x="857" y="-27"/>
         </scene>
-        <!--View Controller-->
+        <!--Gesture View Controller-->
         <scene sceneID="4wE-p8-oae">
             <objects>
-                <viewController id="v7R-jh-pPd" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="gestureViewController" id="v7R-jh-pPd" customClass="gestureViewController" customModule="Week6" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jX1-Nn-qxd">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="50y-5Z-jAU">
+                                <rect key="frame" x="80" y="159" width="233" height="128"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="6Jk-li-jLR"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="fyK-4e-czO" appends="YES" id="NEk-IS-tdo"/>
+                                </connections>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="EIV-Nc-mFH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="50y-5Z-jAU" firstAttribute="leading" secondItem="EIV-Nc-mFH" secondAttribute="leading" constant="80" id="K9l-cR-1eo"/>
+                            <constraint firstItem="EIV-Nc-mFH" firstAttribute="trailing" secondItem="50y-5Z-jAU" secondAttribute="trailing" constant="80" id="Snk-32-Mo5"/>
+                            <constraint firstItem="50y-5Z-jAU" firstAttribute="top" secondItem="EIV-Nc-mFH" secondAttribute="top" constant="100" id="ywh-7Y-NmH"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tapGesture" destination="fyK-4e-czO" id="6sk-nW-t27"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gLQ-nh-ZCn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="fyK-4e-czO">
+                    <connections>
+                        <action selector="isViewTapped:" destination="v7R-jh-pPd" id="N0p-HJ-Lah"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1712" y="-27"/>
         </scene>
@@ -165,6 +191,9 @@
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
