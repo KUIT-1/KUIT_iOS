@@ -14,6 +14,7 @@
 		5195D3F72A164EFE004CE657 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5195D3F62A164EFE004CE657 /* Assets.xcassets */; };
 		5195D3FA2A164EFE004CE657 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5195D3F82A164EFE004CE657 /* LaunchScreen.storyboard */; };
 		5195D4022A16531B004CE657 /* testCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5195D4012A16531B004CE657 /* testCollectionViewCell.swift */; };
+		5195D4042A1663EF004CE657 /* animateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5195D4032A1663EF004CE657 /* animateViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		5195D3F92A164EFE004CE657 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5195D3FB2A164EFE004CE657 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5195D4012A16531B004CE657 /* testCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testCollectionViewCell.swift; sourceTree = "<group>"; };
+		5195D4032A1663EF004CE657 /* animateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				5195D3EF2A164EFE004CE657 /* SceneDelegate.swift */,
 				5195D3F12A164EFE004CE657 /* ViewController.swift */,
 				5195D4012A16531B004CE657 /* testCollectionViewCell.swift */,
+				5195D4032A1663EF004CE657 /* animateViewController.swift */,
 				5195D3F32A164EFE004CE657 /* Main.storyboard */,
 				5195D3F62A164EFE004CE657 /* Assets.xcassets */,
 				5195D3F82A164EFE004CE657 /* LaunchScreen.storyboard */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5195D3F22A164EFE004CE657 /* ViewController.swift in Sources */,
+				5195D4042A1663EF004CE657 /* animateViewController.swift in Sources */,
 				5195D3EE2A164EFE004CE657 /* AppDelegate.swift in Sources */,
 				5195D4022A16531B004CE657 /* testCollectionViewCell.swift in Sources */,
 				5195D3F02A164EFE004CE657 /* SceneDelegate.swift in Sources */,
