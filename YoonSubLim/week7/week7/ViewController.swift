@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController {
 
@@ -34,6 +35,13 @@ class ViewController: UIViewController {
         SW3.isOn = UserDefaults.standard.bool(forKey: "SW3")
         
         textLabel.text = UserDefaults.standard.string(forKey: "saveText")
+        
+        var test = ClassStruct(semester: 2, name: "iOS", department: "KUIT", courseID: 12345)
+        
+        // CoreData
+//        coredataSave()
+        coredataLoad()
+        
     }
 
     @IBAction func sw1_tap(_ sender: Any) {
@@ -56,6 +64,62 @@ class ViewController: UIViewController {
         UserDefaults.standard.set(textField.text, forKey: "saveText")
     }
     
+    // CoreData //
+    // 저장
+    func coredataSave(){
+        var test = ClassStruct(semester: 2, name: "iOS", department: "KUIT", courseID: 12345)
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let container = appDelegate.persistentContainer.viewContext
+        let classEntity = NSEntityDescription.entity(forEntityName: "Class", in: container)
+        
+        if let classEntity = classEntity{
+            let tmp = NSManagedObject(entity: classEntity, insertInto: container)
+            tmp.setValue(test.semester, forKey: "semester")
+            tmp.setValue(test.name, forKey: "name")
+            tmp.setValue(test.department, forKey: "department")
+            tmp.setValue(test.courseID, forKey: "courseID")
+            
+            do{
+                // container 에 Entity 저장
+                try container.save()
+                print("save success")
+            }catch{
+                print(error.localizedDescription)
+            }
+        }
+    }
+    
+    // 불러오기
+    func coredataLoad(){
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let container = appDelegate.persistentContainer.viewContext
+        
+        do{
+            let classes = try container.fetch(Class.fetchRequest()) as! [Class]
+            classes.forEach{
+                print($0.semester)
+                print($0.name ?? "")
+                print($0.department ?? "")
+                print($0.courseID)
+            }
+        }catch{
+            print(error.localizedDescription)
+        }
+    }
+    
+    // semester - int
+    // name - string
+    // department - string
+    // courseID - int
 
+
+}
+
+struct ClassStruct{
+    var semester: Int
+    var name: String
+    var department: String
+    var courseID: Int
 }
 
