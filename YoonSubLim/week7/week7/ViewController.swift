@@ -5,10 +5,16 @@
 //  Created by YoonSub Lim on 2023/05/20.
 //
 
+import Security // for keychain
 import UIKit
 import CoreData
 
 class ViewController: UIViewController {
+    
+    // 간단한 데이터 -> UserDefaults
+    // 조금 큰 데이터 -> CoreData
+    // 보안에 필요한 데이터 -> KeyChain
+    // 방대한 데이터 -> 데이터베이스 시스템
 
     @IBOutlet weak var SW1: UISwitch!
     @IBOutlet weak var SW2: UISwitch!
@@ -41,6 +47,15 @@ class ViewController: UIViewController {
         // CoreData
 //        coredataSave()
         coredataLoad()
+        
+        
+        // Keychain
+//        saveKeyChain(id: "test1", password: "12345678")
+        let savedPassword = fetchFromKeychain(id: "test1")
+        
+        if savedPassword != nil{
+            print(savedPassword!)
+        }
         
     }
 
@@ -113,7 +128,75 @@ class ViewController: UIViewController {
     // department - string
     // courseID - int
 
-
+    let serviceId = "yooonsublim.week7" // Bundle ID
+    
+    // keychain Save
+    func saveKeyChain(id: String, password: String){
+        guard let data = password.data(using: .utf8) else{
+            print("변환 오류")
+            return
+        }
+        
+        let query: [String: Any] = [
+            kSecClass as String: kSecClassGenericPassword,
+            kSecAttrService as String: serviceId,
+            kSecAttrAccount as String: id,
+            kSecValueData as String: data,
+            kSecAttrAccessible as String: kSecAttrAccessibleWhenUnlocked
+        ]
+        
+        let status = SecItemAdd(query as CFDictionary, nil)
+        
+        if status == errSecSuccess{
+            print("정상적으로 추가됨")
+        }else if status == errSecDuplicateItem{
+            // 업데이트
+            let status2 = SecItemUpdate(query as CFDictionary, [kSecValueData as String: data] as CFDictionary)
+            
+            if status2 == errSecSuccess{
+                print("정상적으로 업데이트됨")
+            }else{
+                print("업데이트 실패")
+            }
+        }else{
+            print("추가 실패")
+        }
+        
+    }
+    
+    
+    // keychain Load
+    func fetchFromKeychain(id: String) -> String? {
+        
+        let query: [String: Any] = [
+            kSecClass as String: kSecClassGenericPassword,
+            kSecAttrService as String: serviceId,
+            kSecAttrAccount as String: id,
+            kSecMatchLimit as String: kSecMatchLimitOne,
+            kSecReturnAttributes as String: true,
+            kSecReturnData as String: true
+        ]
+        
+        var item: CFTypeRef?
+        
+        let status = SecItemCopyMatching(query as CFDictionary, &item)
+        
+        if status == errSecSuccess{
+            if let itemDict = item as? [String: Any],
+               let passwordData = itemDict[kSecValueData as String] as? Data,
+               let password = String(data: passwordData, encoding: .utf8){
+                print("검색 성공 pass : " + password)
+                return password
+            }
+        }else if status == errSecItemNotFound{
+            print("데이터 없음")
+        }else{
+            print("error")
+        }
+        
+        return nil
+    }
+    
 }
 
 struct ClassStruct{
