@@ -197,6 +197,13 @@ class ViewController: UIViewController {
         return nil
     }
     
+    // 7주차 미션
+    @IBAction func nextViewBtnTab(_ sender: Any) {
+        let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "ColorVC")
+        
+        self.navigationController?.pushViewController(nextVC!, animated: true)
+    }
+    
 }
 
 struct ClassStruct{

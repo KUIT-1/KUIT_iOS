@@ -14,6 +14,7 @@
 		2E27CFD52A18A6CB001878C6 /* week7.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2E27CFD32A18A6CB001878C6 /* week7.xcdatamodeld */; };
 		2E27CFD72A18A6CC001878C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E27CFD62A18A6CC001878C6 /* Assets.xcassets */; };
 		2E27CFDA2A18A6CC001878C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E27CFD82A18A6CC001878C6 /* LaunchScreen.storyboard */; };
+		2E27D0062A1BC926001878C6 /* ColorChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E27D0052A1BC926001878C6 /* ColorChangeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		2E27CFD62A18A6CC001878C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E27CFD92A18A6CC001878C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E27CFDB2A18A6CC001878C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E27D0052A1BC926001878C6 /* ColorChangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorChangeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				2E27CFCC2A18A6CB001878C6 /* SceneDelegate.swift */,
 				2E27CFCE2A18A6CB001878C6 /* ViewController.swift */,
 				2E27CFD02A18A6CB001878C6 /* Main.storyboard */,
+				2E27D0052A1BC926001878C6 /* ColorChangeViewController.swift */,
 				2E27CFD62A18A6CC001878C6 /* Assets.xcassets */,
 				2E27CFD82A18A6CC001878C6 /* LaunchScreen.storyboard */,
 				2E27CFDB2A18A6CC001878C6 /* Info.plist */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E27D0062A1BC926001878C6 /* ColorChangeViewController.swift in Sources */,
 				2E27CFCF2A18A6CB001878C6 /* ViewController.swift in Sources */,
 				2E27CFD52A18A6CB001878C6 /* week7.xcdatamodeld in Sources */,
 				2E27CFCB2A18A6CB001878C6 /* AppDelegate.swift in Sources */,
