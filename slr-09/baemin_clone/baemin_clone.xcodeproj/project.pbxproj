@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2309759D29F9039F00A7E0BA /* BMHANNAAir_ttf.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2309759C29F9039F00A7E0BA /* BMHANNAAir_ttf.ttf */; };
+		2309EE6A2A1D11C100A38EBC /* MyInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2309EE692A1D11C100A38EBC /* MyInfoViewController.swift */; };
 		237DA76D29DC38E6008510C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237DA76C29DC38E6008510C5 /* AppDelegate.swift */; };
 		237DA76F29DC38E6008510C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237DA76E29DC38E6008510C5 /* SceneDelegate.swift */; };
 		237DA77129DC38E6008510C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237DA77029DC38E6008510C5 /* ViewController.swift */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		2309759C29F9039F00A7E0BA /* BMHANNAAir_ttf.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BMHANNAAir_ttf.ttf; sourceTree = "<group>"; };
 		2309759E29F903C200A7E0BA /* BMHANNAPro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BMHANNAPro.ttf; sourceTree = "<group>"; };
+		2309EE692A1D11C100A38EBC /* MyInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfoViewController.swift; sourceTree = "<group>"; };
 		237DA76929DC38E6008510C5 /* baemin_clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = baemin_clone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		237DA76C29DC38E6008510C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		237DA76E29DC38E6008510C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				23C38E722A07A3DB00731180 /* ShopCell.swift */,
 				23BC28A82A0B8BD6001A5DDA /* tabbarCollectionViewCell.swift */,
 				23BC28AC2A0B91C7001A5DDA /* ShopListCollectionViewCell.swift */,
+				2309EE692A1D11C100A38EBC /* MyInfoViewController.swift */,
 			);
 			path = VCS;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 				237DA76D29DC38E6008510C5 /* AppDelegate.swift in Sources */,
 				23BC28AD2A0B91C7001A5DDA /* ShopListCollectionViewCell.swift in Sources */,
 				237DA76F29DC38E6008510C5 /* SceneDelegate.swift in Sources */,
+				2309EE6A2A1D11C100A38EBC /* MyInfoViewController.swift in Sources */,
 				2396141329DC86CB00B59517 /* foodButton.swift in Sources */,
 				23BC28A92A0B8BD6001A5DDA /* tabbarCollectionViewCell.swift in Sources */,
 			);
