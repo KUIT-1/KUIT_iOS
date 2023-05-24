@@ -13,10 +13,34 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var AppleLoginView: UIView!
     @IBOutlet weak var NaverLoginView: UIView!
     
+    @IBOutlet weak var idTF: UITextField!
+    @IBOutlet weak var pwTF: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         socialLoginBtn()
+        
+        if let userId = UserDefaults.standard.string(forKey: "id") {
+            print(userId)
+            print(UserDefaults.standard.string(forKey: "pw")!)
+        }
+        
+    }
+    
+    func loginSuccess(id: String, pw: String) -> Bool{
+        
+        
+        return true
+    }
+    
+    @IBAction func login(_ sender: Any) {
+        if loginSuccess(id: idTF.text!, pw: pwTF.text!) {
+            UserDefaults.standard.set(idTF.text, forKey: "id")
+            UserDefaults.standard.set(pwTF.text, forKey: "pw")
+            // 이전 화면으로 이동 
+            self.navigationController?.popViewController(animated: true)
+        }
         
     }
     

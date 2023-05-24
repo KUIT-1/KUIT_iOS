@@ -13,7 +13,7 @@
         <!--Login View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="LoginViewController" customModule="baemin_clone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Login" id="Y6W-OH-hqX" customClass="LoginViewController" customModule="baemin_clone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -70,6 +70,10 @@
                                 <buttonConfiguration key="configuration" style="plain" title="로그인">
                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="login:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="IGy-xQ-tt2"/>
+                                    <action selector="loginBtn:" destination="wOU-3J-etr" eventType="touchUpInside" id="ArL-z3-09o"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CGg-y5-3bh">
                                 <rect key="frame" x="196" y="390.33333333333331" width="1" height="10"/>
@@ -233,9 +237,12 @@
                         <outlet property="AppleLoginView" destination="obg-ne-nVn" id="J5s-g6-jqu"/>
                         <outlet property="FacebookLoginView" destination="TXH-yc-3eL" id="6rK-BW-lvB"/>
                         <outlet property="NaverLoginView" destination="NHA-Ys-BMv" id="T6a-d7-ZOA"/>
+                        <outlet property="idTF" destination="MeR-Nc-vWO" id="uym-RD-ATX"/>
+                        <outlet property="pwTF" destination="4cc-2z-3zL" id="lso-kH-6Xq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="wOU-3J-etr" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="75.572519083969468" y="-2.1126760563380285"/>
         </scene>

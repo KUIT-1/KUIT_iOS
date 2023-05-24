@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hes-A9-NlN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dpv-Up-3Ce">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -314,6 +314,16 @@
                                                     <constraint firstItem="9Qa-jN-mJ5" firstAttribute="leading" secondItem="Hxp-97-0h0" secondAttribute="leading" constant="8" id="uHD-Ma-iGI"/>
                                                 </constraints>
                                             </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sJC-Ln-bj1">
+                                                <rect key="frame" x="220" y="640" width="73" height="35"/>
+                                                <color key="backgroundColor" name="BMmint"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="내 정보"/>
+                                                <connections>
+                                                    <action selector="myInfoPage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OJe-ri-l0T"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -323,6 +333,7 @@
                                             <constraint firstAttribute="trailing" secondItem="JD0-6R-jG2" secondAttribute="trailing" constant="16" id="617-6T-vQp"/>
                                             <constraint firstItem="Hxp-97-0h0" firstAttribute="top" secondItem="5dz-WX-Zot" secondAttribute="bottom" constant="10" id="EuO-rg-u1T"/>
                                             <constraint firstItem="Jh8-uE-AT4" firstAttribute="top" secondItem="csr-yt-psg" secondAttribute="bottom" constant="10" id="Fpf-OC-CQX"/>
+                                            <constraint firstAttribute="trailing" secondItem="sJC-Ln-bj1" secondAttribute="trailing" constant="100" id="Gb0-qU-Hib"/>
                                             <constraint firstItem="5dz-WX-Zot" firstAttribute="top" secondItem="0h3-FA-P9m" secondAttribute="bottom" constant="10" id="HNl-0F-lLD"/>
                                             <constraint firstAttribute="trailing" secondItem="0h3-FA-P9m" secondAttribute="trailing" constant="16" id="Jsp-fG-eNX"/>
                                             <constraint firstAttribute="trailing" secondItem="csr-yt-psg" secondAttribute="trailing" id="NQS-lq-g4e"/>
@@ -333,6 +344,7 @@
                                             <constraint firstItem="JD0-6R-jG2" firstAttribute="leading" secondItem="Jh8-uE-AT4" secondAttribute="trailing" constant="8" id="Z2D-2g-QWD"/>
                                             <constraint firstItem="krh-HQ-3Go" firstAttribute="height" secondItem="5dz-WX-Zot" secondAttribute="height" id="ZLq-5a-sbr"/>
                                             <constraint firstItem="csr-yt-psg" firstAttribute="leading" secondItem="kAd-ED-psI" secondAttribute="leading" id="ZrX-s4-F9a"/>
+                                            <constraint firstAttribute="bottom" secondItem="sJC-Ln-bj1" secondAttribute="bottom" constant="40" id="jlt-J6-671"/>
                                             <constraint firstItem="JD0-6R-jG2" firstAttribute="width" secondItem="Jh8-uE-AT4" secondAttribute="width" id="m0m-j2-Bdj"/>
                                             <constraint firstItem="krh-HQ-3Go" firstAttribute="top" secondItem="0h3-FA-P9m" secondAttribute="bottom" constant="10" id="nPB-ue-R8X"/>
                                             <constraint firstItem="Jh8-uE-AT4" firstAttribute="leading" secondItem="kAd-ED-psI" secondAttribute="leading" constant="16" id="t4u-El-Fda"/>
@@ -374,6 +386,7 @@
                         <outlet property="BmartView" destination="5dz-WX-Zot" id="KVJ-GZ-ZlU"/>
                         <outlet property="freshFoodLabel" destination="7p0-Z0-z0r" id="rFL-9V-yAT"/>
                         <outlet property="freshFoodView" destination="krh-HQ-3Go" id="LTx-RZ-Xnm"/>
+                        <outlet property="myInfoBtn" destination="sJC-Ln-bj1" id="ZUu-Qi-iRI"/>
                         <outlet property="order1BG" destination="TVc-rY-hbs" id="TdH-3X-L7n"/>
                         <outlet property="order1Label" destination="TcO-n3-XFF" id="0g0-rP-HDQ"/>
                         <outlet property="order1View" destination="Jh8-uE-AT4" id="591-9b-OHd"/>
@@ -391,13 +404,13 @@
         <!--My Info View Controller-->
         <scene sceneID="MxH-bd-raU">
             <objects>
-                <viewController id="hes-A9-NlN" customClass="MyInfoViewController" customModule="baemin_clone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MyInfo" id="hes-A9-NlN" customClass="MyInfoViewController" customModule="baemin_clone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0U3-9h-bT3">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.crop.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="8HY-uZ-zeR">
-                                <rect key="frame" x="146.66666666666666" y="143" width="100" height="98.66666666666697"/>
+                                <rect key="frame" x="146.66666666666666" y="143" width="100" height="98.666666666666686"/>
                                 <color key="tintColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="nxb-Ci-51u"/>
@@ -622,23 +635,30 @@
                                         <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="로그아웃" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pc8-Pt-yVI">
-                                        <rect key="frame" x="-1" y="6.6666666666666288" width="49" height="17"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TE4-sb-cRU">
+                                        <rect key="frame" x="-16.999999999999986" y="1.6666666666666288" width="70" height="27"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="Jir-lN-TmK"/>
+                                            <constraint firstAttribute="height" constant="27" id="pmg-hW-FNK"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="로그아웃"/>
+                                        <connections>
+                                            <action selector="logout:" destination="hes-A9-NlN" eventType="touchUpInside" id="anJ-ri-gpX"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="RxN-ZW-ElY" firstAttribute="centerY" secondItem="xhP-yq-FVb" secondAttribute="centerY" id="8lu-vg-deT"/>
                                     <constraint firstAttribute="width" constant="120" id="GHR-6v-1TT"/>
+                                    <constraint firstItem="RxN-ZW-ElY" firstAttribute="leading" secondItem="TE4-sb-cRU" secondAttribute="trailing" constant="5" id="H5d-cZ-v7S"/>
                                     <constraint firstItem="xUP-lC-0bK" firstAttribute="leading" secondItem="RxN-ZW-ElY" secondAttribute="trailing" constant="10" id="HUT-V8-HUc"/>
-                                    <constraint firstItem="Pc8-Pt-yVI" firstAttribute="centerY" secondItem="RxN-ZW-ElY" secondAttribute="centerY" id="Rt3-Lo-nVM"/>
                                     <constraint firstAttribute="height" constant="30" id="Tna-Lh-Qho"/>
                                     <constraint firstItem="RxN-ZW-ElY" firstAttribute="centerX" secondItem="xhP-yq-FVb" secondAttribute="centerX" id="VSa-Sm-0VM"/>
-                                    <constraint firstItem="RxN-ZW-ElY" firstAttribute="leading" secondItem="Pc8-Pt-yVI" secondAttribute="trailing" constant="10" id="aZx-Mj-sPF"/>
                                     <constraint firstItem="xUP-lC-0bK" firstAttribute="centerY" secondItem="RxN-ZW-ElY" secondAttribute="centerY" id="iOQ-pZ-Fli"/>
+                                    <constraint firstItem="TE4-sb-cRU" firstAttribute="centerY" secondItem="RxN-ZW-ElY" secondAttribute="centerY" id="myr-9S-jVp"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="내 정보 수정" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IL8-y9-aAP">
@@ -678,8 +698,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="emailLabel" destination="0Fl-Mw-vbe" id="gYx-FU-UCp"/>
                         <outlet property="emailView" destination="IUW-ep-Slj" id="Ah3-Rd-VP2"/>
                         <outlet property="loginDeviceView" destination="bVk-hH-hL7" id="nUA-as-kXt"/>
+                        <outlet property="logoutBtn" destination="TE4-sb-cRU" id="rMJ-yv-Rbd"/>
                         <outlet property="nicknameView" destination="FM2-YC-Zio" id="yfG-UP-BwR"/>
                         <outlet property="phnumberView" destination="nST-HK-sZX" id="EgB-zy-7jP"/>
                         <outlet property="serviceView" destination="aEa-fT-Xb3" id="pZb-Ue-KVx"/>

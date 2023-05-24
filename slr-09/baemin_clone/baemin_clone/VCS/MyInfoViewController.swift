@@ -16,13 +16,29 @@ class MyInfoViewController: UIViewController {
     @IBOutlet weak var serviceView: UIView!
     @IBOutlet weak var socialView: UIView!
     
+    @IBOutlet weak var logoutBtn: UIButton!
+    
+    @IBOutlet weak var emailLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         border()
+        
+        emailLabel.text = UserDefaults.standard.string(forKey: "id")
+        
     }
     
-
+    
+    @IBAction func logout(_ sender: Any) {
+        // 저장된 id, pw 삭제
+        UserDefaults.standard.removeObject(forKey: "id")
+        UserDefaults.standard.removeObject(forKey: "pw")
+        
+        // 이전 화면으로 이동
+        self.navigationController?.popViewController(animated: true)
+    }
+    
     func border(){
         nicknameView.layer.borderColor = UIColor.lightGray.cgColor
         nicknameView.layer.cornerRadius = 10

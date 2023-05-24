@@ -30,6 +30,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var BMStoreView: UIView!
     @IBOutlet weak var BMStoreLabel: UILabel!
     
+    
+    @IBOutlet weak var loginBtn: UIButton!
+    @IBOutlet weak var myInfoBtn: UIButton!
+    
+    
     override func loadView() {
         super.loadView()
         print("loadView")
@@ -46,11 +51,35 @@ class ViewController: UIViewController {
     
     
     @IBAction func orderButtonTap(_ sender: Any) {
-        //배달 화면
+        // 배달 화면
         // 스토리보드 가져오기
         let orderSB = UIStoryboard(name: "Order", bundle: nil)
         let orderVC = orderSB.instantiateViewController(withIdentifier: "order")
         self.navigationController?.pushViewController(orderVC, animated: true)
+    }
+    
+    
+//    @IBAction func loginPage(_ sender: Any) {
+//        let loginSB = UIStoryboard(name: "Login", bundle: nil)
+//        let loginVC = loginSB.instantiateViewController(withIdentifier: "Login")
+//        self.navigationController?.pushViewController(loginVC, animated: true)
+//
+//    }
+    
+    @IBAction func myInfoPage(_ sender: Any) {
+        // 로그인 된 상태 -> 내 정보 화면으로
+        if (UserDefaults.standard.string(forKey: "id") != nil) {
+            let myInfoSB = UIStoryboard(name: "Main", bundle: nil)
+            let myInfoVC = myInfoSB.instantiateViewController(withIdentifier: "MyInfo")
+            self.navigationController?.pushViewController(myInfoVC, animated: true)
+        }
+        // 로그아웃 상태 -> 로그인 화면으로
+        else {
+            let loginSB = UIStoryboard(name: "Login", bundle: nil)
+            let loginVC = loginSB.instantiateViewController(withIdentifier: "Login")
+            self.navigationController?.pushViewController(loginVC, animated: true)
+        }
+        
     }
 
     func orderButtonInit(){
@@ -108,6 +137,8 @@ class ViewController: UIViewController {
         super.viewWillDisappear(animated)
         print("viewWillDisappear")
     }
+ 
+    
     
 }
 
