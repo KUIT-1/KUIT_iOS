@@ -21,6 +21,18 @@ class MyPageViewController: UIViewController {
 
     }
     
+    @IBAction func logoutBtnTap(_ sender: Any) {
+        
+        print("logoutBtn clicked")
+        
+        UserDefaults.standard.removeObject(forKey: "lastLoginedId")
+        
+        DispatchQueue.main.async(){
+            self.performSegue(withIdentifier: "moveLoginVC", sender: self)
+        }
+        
+    }
+    
     func initialInformation(){
         if let email = UserDefaults.standard.string(forKey: "lastLoginedId"){
             myEmail.text = email
