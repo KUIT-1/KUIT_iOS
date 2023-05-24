@@ -12,7 +12,7 @@
         <!--Login View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="login" id="Y6W-OH-hqX" customClass="LoginViewController" customModule="week7" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginVC" id="Y6W-OH-hqX" customClass="LoginViewController" customModule="week7" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -198,6 +198,7 @@
                     <connections>
                         <outlet property="emailField" destination="SA9-ic-Bov" id="lmO-fc-Sy8"/>
                         <outlet property="passwordField" destination="oPE-Fu-wWN" id="NWS-4o-jDN"/>
+                        <segue destination="Zz7-UH-JNG" kind="show" identifier="moveMainLogic" id="uN2-DK-JhG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -207,13 +208,13 @@
         <!--View Controller-->
         <scene sceneID="NN0-Te-iZo">
             <objects>
-                <viewController id="Ac7-Mg-U8B" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mainVC" id="Ac7-Mg-U8B" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HIT-pD-RYN">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vQ6-uw-L3R">
-                                <rect key="frame" x="126" y="421" width="141" height="99"/>
+                                <rect key="frame" x="126" y="374" width="141" height="99"/>
                                 <color key="backgroundColor" red="0.0" green="0.87039698929999998" blue="0.82781030050000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="99" id="6gQ-Cs-Iyy"/>
@@ -223,7 +224,7 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Send Me MyPage"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="로그인 됨" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1LM-zm-OLv">
-                                <rect key="frame" x="144" y="298" width="104" height="34"/>
+                                <rect key="frame" x="144" y="251" width="104" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -538,10 +539,11 @@
         <!--Navigation Controller-->
         <scene sceneID="q8b-rs-Cnl">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Zz7-UH-JNG" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="Zz7-UH-JNG" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Ury-k5-VVZ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="o4g-TV-ofB">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

@@ -137,12 +137,13 @@ class ViewController: UIViewController {
             return
         }
         
+        // 딕셔너리 타입
         let query: [String: Any] = [
-            kSecClass as String: kSecClassGenericPassword,
-            kSecAttrService as String: serviceId,
-            kSecAttrAccount as String: id,
-            kSecValueData as String: data,
-            kSecAttrAccessible as String: kSecAttrAccessibleWhenUnlocked
+            kSecClass as String: kSecClassGenericPassword, // 키체인 아이템 클래스 타입
+            kSecAttrService as String: serviceId, // 서비스 아이디 // 앱 번들 아이디
+            kSecAttrAccount as String: id, // 저장할 아이템의 계정 이름
+            kSecValueData as String: data, // 저장할 아이템의 데이터를 Data Type 으로 형변환하여 전달
+            kSecAttrAccessible as String: kSecAttrAccessibleWhenUnlocked // 저장한 데이터에 접근할 수 있는 시점 -> 기기의 잠금 해제됐을 때 가능
         ]
         
         let status = SecItemAdd(query as CFDictionary, nil)
@@ -179,8 +180,10 @@ class ViewController: UIViewController {
         
         var item: CFTypeRef?
         
+        // query 기반으로 copy 해온 값이
         let status = SecItemCopyMatching(query as CFDictionary, &item)
         
+        // success 라면 내용 까보기
         if status == errSecSuccess{
             if let itemDict = item as? [String: Any],
                let passwordData = itemDict[kSecValueData as String] as? Data,
@@ -191,7 +194,7 @@ class ViewController: UIViewController {
         }else if status == errSecItemNotFound{
             print("데이터 없음")
         }else{
-            print("error")
+            print("unknown error")
         }
         
         return nil
