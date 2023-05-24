@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E16018A2A1DF7C700AD8A53 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1601892A1DF7C700AD8A53 /* MyPageViewController.swift */; };
+		2E16018C2A1DF7CE00AD8A53 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E16018B2A1DF7CE00AD8A53 /* MainViewController.swift */; };
 		2E27CFCB2A18A6CB001878C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E27CFCA2A18A6CB001878C6 /* AppDelegate.swift */; };
 		2E27CFCD2A18A6CB001878C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E27CFCC2A18A6CB001878C6 /* SceneDelegate.swift */; };
 		2E27CFCF2A18A6CB001878C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E27CFCE2A18A6CB001878C6 /* ViewController.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E1601892A1DF7C700AD8A53 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		2E16018B2A1DF7CE00AD8A53 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		2E27CFC72A18A6CB001878C6 /* week7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = week7.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E27CFCA2A18A6CB001878C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E27CFCC2A18A6CB001878C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +74,8 @@
 				2E27CFCE2A18A6CB001878C6 /* ViewController.swift */,
 				2E27D00B2A1BDAC8001878C6 /* LoginViewController.swift */,
 				2E27CFD02A18A6CB001878C6 /* Main.storyboard */,
+				2E1601892A1DF7C700AD8A53 /* MyPageViewController.swift */,
+				2E16018B2A1DF7CE00AD8A53 /* MainViewController.swift */,
 				2E27D0052A1BC926001878C6 /* ColorChangeViewController.swift */,
 				2E27CFD62A18A6CC001878C6 /* Assets.xcassets */,
 				2E27CFD82A18A6CC001878C6 /* LaunchScreen.storyboard */,
@@ -153,10 +159,12 @@
 			files = (
 				2E27D00C2A1BDAC8001878C6 /* LoginViewController.swift in Sources */,
 				2E27D0062A1BC926001878C6 /* ColorChangeViewController.swift in Sources */,
+				2E16018A2A1DF7C700AD8A53 /* MyPageViewController.swift in Sources */,
 				2E27CFCF2A18A6CB001878C6 /* ViewController.swift in Sources */,
 				2E27CFD52A18A6CB001878C6 /* week7.xcdatamodeld in Sources */,
 				2E27CFCB2A18A6CB001878C6 /* AppDelegate.swift in Sources */,
 				2E27CFCD2A18A6CB001878C6 /* SceneDelegate.swift in Sources */,
+				2E16018C2A1DF7CE00AD8A53 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

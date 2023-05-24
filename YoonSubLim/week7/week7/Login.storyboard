@@ -205,10 +205,10 @@
             </objects>
             <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
         </scene>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="NN0-Te-iZo">
             <objects>
-                <viewController storyboardIdentifier="mainVC" id="Ac7-Mg-U8B" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mainVC" id="Ac7-Mg-U8B" customClass="MainViewController" customModule="week7" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HIT-pD-RYN">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -222,6 +222,11 @@
                                 <color key="tintColor" systemColor="systemRedColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Send Me MyPage"/>
+                                <connections>
+                                    <action selector="mypageBtnTab:" destination="cdO-EV-JvG" eventType="touchUpInside" id="SxB-GM-DOT"/>
+                                    <action selector="mypageBtnTap:" destination="Ac7-Mg-U8B" eventType="touchUpInside" id="Av2-N8-XK5"/>
+                                    <action selector="mypageBtnTap:" destination="cdO-EV-JvG" eventType="touchUpInside" id="fde-gQ-IBl"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="로그인 됨" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1LM-zm-OLv">
                                 <rect key="frame" x="144" y="251" width="104" height="34"/>
@@ -244,13 +249,14 @@
                     <navigationItem key="navigationItem" id="Mhb-a8-2lc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8wA-rb-M3J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="cdO-EV-JvG" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="931" y="736"/>
         </scene>
-        <!--View Controller-->
+        <!--My Page View Controller-->
         <scene sceneID="WjU-SF-QDE">
             <objects>
-                <viewController id="xXs-at-MKW" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mypageVC" id="xXs-at-MKW" customClass="MyPageViewController" customModule="week7" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="arh-dP-kBB">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -384,10 +390,10 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xfv-Zh-fih">
                                         <rect key="frame" x="0.0" y="0.0" width="313" height="76"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="닉네임" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uBO-yU-jec">
-                                                <rect key="frame" x="8" y="27.666666666666686" width="45" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uBO-yU-jec">
+                                                <rect key="frame" x="8" y="27.666666666666686" width="61" height="21"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="45" id="EFE-g9-tyF"/>
+                                                    <constraint firstAttribute="width" constant="61" id="EFE-g9-tyF"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -402,7 +408,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="chevron.forward" catalog="system"/>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="this is nickname field" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzJ-Yx-SSP">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="this is password field" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzJ-Yx-SSP">
                                                 <rect key="frame" x="98" y="27.666666666666686" width="190" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="190" id="5Se-sD-qZN"/>
@@ -531,6 +537,10 @@
                             <constraint firstItem="ZsZ-Z4-aGE" firstAttribute="trailing" secondItem="M06-Yu-ms3" secondAttribute="trailing" constant="40" id="wUT-3r-ygN"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="myEmail" destination="s75-pU-VSE" id="QNi-Bq-YFg"/>
+                        <outlet property="myPassword" destination="fzJ-Yx-SSP" id="5Yo-mg-NeJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9uw-c8-B20" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

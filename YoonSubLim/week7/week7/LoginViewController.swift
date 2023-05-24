@@ -116,37 +116,4 @@ class LoginViewController: UIViewController {
         
     }
     
-    // keychain Load
-    func fetchFromKeychain(id: String) -> String? {
-        
-        let query: [String: Any] = [
-            kSecClass as String: kSecClassGenericPassword,
-            kSecAttrService as String: serviceId,
-            kSecAttrAccount as String: id,
-            kSecMatchLimit as String: kSecMatchLimitOne,
-            kSecReturnAttributes as String: true,
-            kSecReturnData as String: true
-        ]
-        
-        var item: CFTypeRef?
-        
-        let status = SecItemCopyMatching(query as CFDictionary, &item)
-        
-        if status == errSecSuccess{
-            if let itemDict = item as? [String: Any],
-               let passwordData = itemDict[kSecValueData as String] as? Data,
-               let password = String(data: passwordData, encoding: .utf8){
-                print("검색 성공 pass : " + password)
-                return password
-            }
-        }else if status == errSecItemNotFound{
-            print("데이터 없음")
-        }else{
-            print("error")
-        }
-        
-        return nil
-    }
-    
-    
 }
