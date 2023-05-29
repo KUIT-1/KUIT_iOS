@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var searchBarView: UIView!
+    
     @IBOutlet weak var orderView: UIView!
     @IBOutlet weak var orderBG: UIImageView!
     @IBOutlet weak var orderLabel: UILabel!
@@ -16,6 +18,22 @@ class ViewController: UIViewController {
     @IBOutlet weak var order1View: UIView!
     @IBOutlet weak var order1BG: UIImageView!
     @IBOutlet weak var order1Label: UILabel!
+    
+    @IBOutlet weak var packageView: UIView!
+    
+    @IBOutlet weak var BmartView: UIView!
+    @IBOutlet weak var BmartLabel: UILabel!
+    
+    @IBOutlet weak var freshFoodView: UIView!
+    @IBOutlet weak var freshFoodLabel: UILabel!
+
+    @IBOutlet weak var BMStoreView: UIView!
+    @IBOutlet weak var BMStoreLabel: UILabel!
+    
+    
+    @IBOutlet weak var loginBtn: UIButton!
+    @IBOutlet weak var myInfoBtn: UIButton!
+    
     
     override func loadView() {
         super.loadView()
@@ -33,11 +51,35 @@ class ViewController: UIViewController {
     
     
     @IBAction func orderButtonTap(_ sender: Any) {
-        //배달 화면
+        // 배달 화면
         // 스토리보드 가져오기
         let orderSB = UIStoryboard(name: "Order", bundle: nil)
         let orderVC = orderSB.instantiateViewController(withIdentifier: "order")
         self.navigationController?.pushViewController(orderVC, animated: true)
+    }
+    
+    
+//    @IBAction func loginPage(_ sender: Any) {
+//        let loginSB = UIStoryboard(name: "Login", bundle: nil)
+//        let loginVC = loginSB.instantiateViewController(withIdentifier: "Login")
+//        self.navigationController?.pushViewController(loginVC, animated: true)
+//
+//    }
+    
+    @IBAction func myInfoPage(_ sender: Any) {
+        // 로그인 된 상태 -> 내 정보 화면으로
+        if (UserDefaults.standard.string(forKey: "id") != nil) {
+            let myInfoSB = UIStoryboard(name: "Main", bundle: nil)
+            let myInfoVC = myInfoSB.instantiateViewController(withIdentifier: "MyInfo")
+            self.navigationController?.pushViewController(myInfoVC, animated: true)
+        }
+        // 로그아웃 상태 -> 로그인 화면으로
+        else {
+            let loginSB = UIStoryboard(name: "Login", bundle: nil)
+            let loginVC = loginSB.instantiateViewController(withIdentifier: "Login")
+            self.navigationController?.pushViewController(loginVC, animated: true)
+        }
+        
     }
 
     func orderButtonInit(){
@@ -54,6 +96,18 @@ class ViewController: UIViewController {
         order1View.layer.shadowColor = UIColor.black.cgColor
         order1View.layer.shadowOpacity = 0.1
         order1View.layer.shadowRadius = 10
+        
+        packageView.layer.cornerRadius = 10
+        
+        BmartView.layer.cornerRadius = 10
+        BmartLabel.text = "27분 후 도착!"
+        
+        freshFoodView.layer.cornerRadius = 10
+        freshFoodLabel.text = "제철 신선 식품\n지금 바로 배달"
+        
+        BMStoreView.layer.cornerRadius = 10
+        BMStoreLabel.text = "정관장의 선물세트를 바로 배달!"
+        
     }
     
     func navigationBarInit() {
@@ -83,6 +137,8 @@ class ViewController: UIViewController {
         super.viewWillDisappear(animated)
         print("viewWillDisappear")
     }
+ 
+    
     
 }
 
