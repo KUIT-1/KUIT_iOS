@@ -8,12 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var apiTest = ApiTest()
+    @State private var responseText = ""
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        VStack(alignment: .leading) {
+            Button {
+                apiTest.urlSessionApi { response in
+                    responseText = String(response.description)
+                }
+            } label: {
+                Text("URLSession Api")
+            }
+            
+            Text("Response")
+                .font(.title)
+            Text(responseText)
+            
+            HStack {
+                Spacer()
+            }
         }
         .padding()
     }
