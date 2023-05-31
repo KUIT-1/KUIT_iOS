@@ -13,6 +13,7 @@
 		511B58352A27228800FF6FAA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 511B58342A27228800FF6FAA /* Preview Assets.xcassets */; };
 		511B583C2A27230400FF6FAA /* ApiTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511B583B2A27230400FF6FAA /* ApiTest.swift */; };
 		511B583F2A272B0F00FF6FAA /* KakaoSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 511B583E2A272B0F00FF6FAA /* KakaoSDK */; };
+		511B58422A272DE700FF6FAA /* KakaoAuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511B58412A272DE700FF6FAA /* KakaoAuthViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,8 @@
 		511B58312A27228800FF6FAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		511B58342A27228800FF6FAA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		511B583B2A27230400FF6FAA /* ApiTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiTest.swift; sourceTree = "<group>"; };
+		511B58402A272C2C00FF6FAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		511B58412A272DE700FF6FAA /* KakaoAuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoAuthViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,9 +58,11 @@
 		511B582C2A27228700FF6FAA /* Week9 */ = {
 			isa = PBXGroup;
 			children = (
+				511B58402A272C2C00FF6FAA /* Info.plist */,
 				511B582D2A27228700FF6FAA /* Week9App.swift */,
 				511B582F2A27228700FF6FAA /* ContentView.swift */,
 				511B583B2A27230400FF6FAA /* ApiTest.swift */,
+				511B58412A272DE700FF6FAA /* KakaoAuthViewModel.swift */,
 				511B58312A27228800FF6FAA /* Assets.xcassets */,
 				511B58332A27228800FF6FAA /* Preview Content */,
 			);
@@ -148,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				511B58422A272DE700FF6FAA /* KakaoAuthViewModel.swift in Sources */,
 				511B58302A27228700FF6FAA /* ContentView.swift in Sources */,
 				511B583C2A27230400FF6FAA /* ApiTest.swift in Sources */,
 				511B582E2A27228700FF6FAA /* Week9App.swift in Sources */,
@@ -282,6 +288,7 @@
 				DEVELOPMENT_TEAM = 99KH3TLG9V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Week9/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -311,6 +318,7 @@
 				DEVELOPMENT_TEAM = 99KH3TLG9V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Week9/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -5,6 +5,7 @@
 //  Created by 이안진 on 2023/05/31.
 //
 
+import Alamofire
 import Foundation
 
 class ApiTest: ObservableObject {
@@ -28,6 +29,21 @@ class ApiTest: ObservableObject {
         }
         
         task.resume()
+    }
+    
+    func alamofireApi(completion: @escaping (WelcomeResponse) -> Void) {
+        let url = "https://dummyjson.com/products/1"
+        
+        AF.request(url, method: .get, encoding: JSONEncoding.default)
+            .responseDecodable(of: WelcomeResponse.self) { response in
+                switch response.result {
+                case .success(let data):
+                    print("DEBUG urlSessionApi success output: \(data)")
+                    completion(data)
+                case .failure(let error):
+                    print("DEBUG alamofireApi error: \(error)")
+                }
+            }
     }
 }
 
