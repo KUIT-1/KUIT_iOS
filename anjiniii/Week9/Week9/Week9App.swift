@@ -5,6 +5,7 @@
 //  Created by 이안진 on 2023/05/31.
 //
 
+import GoogleSignIn
 import KakaoSDKAuth
 import KakaoSDKCommon
 import SwiftUI
@@ -22,6 +23,12 @@ struct Week9App: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .onOpenURL { url in
+                    GIDSignIn.sharedInstance.handle(url)
+                    GIDSignIn.sharedInstance.restorePreviousSignIn { user, error in
+                       // Check if `user` exists; otherwise, do something with `error`
+                     }
+                }
         }
     }
 }
