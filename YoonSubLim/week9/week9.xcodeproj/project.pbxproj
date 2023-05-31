@@ -86,7 +86,6 @@
 				65675E49E20189B3DAA80AA7 /* Pods-week9.debug.xcconfig */,
 				558F5C0530F72DE122D57495 /* Pods-week9.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -368,6 +367,7 @@
 				DEVELOPMENT_TEAM = NJWZGJTLYN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = week9/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "\"\"";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -397,6 +397,7 @@
 				DEVELOPMENT_TEAM = NJWZGJTLYN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = week9/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "\"\"";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
