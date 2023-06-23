@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var orderBG: UIImageView!
     @IBOutlet weak var orderLable: UILabel!
     
+    @IBOutlet weak var takeOutView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +24,7 @@ class ViewController: UIViewController {
         
         orderOneButtonInit()
         orderButtonInit()
+        takeOutButtonInit()
     }
     
     @IBAction func orderOneButtonTap(_ sender: Any) {
@@ -54,6 +56,13 @@ class ViewController: UIViewController {
         orderView.layer.shadowColor = UIColor.black.cgColor
         orderView.layer.shadowOpacity = 0.1
         orderView.layer.shadowRadius = 10
+    }
+    
+    func takeOutButtonInit() {
+        takeOutView.layer.cornerRadius = 10
+        takeOutView.layer.shadowColor = UIColor.black.cgColor
+        takeOutView.layer.shadowOpacity = 0.1
+        takeOutView.layer.shadowRadius = 10
     }
     
     @IBAction func showLoginView(_ sender: Any) {
